@@ -1,0 +1,17 @@
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2018-03-03 21:49 STD
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (1.2s latency).
+Not shown: 995 closed ports
+PORT      STATE    SERVICE    VERSION
+22/tcp    open     ssh        (protocol 2.0)
+25/tcp    filtered smtp
+80/tcp    open     http       Apache httpd 2.4.7 ((Ubuntu))
+9929/tcp  open     nping-echo Nping echo
+31337/tcp open     tcpwrapped
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
+SF-Port22-TCP:V=6.40%I=7%D=3/3%Time=5A9B5F06%P=x86_64-pc-linux-gnu%r(NULL,
+SF:2C,"SSH-2\.0-OpenSSH_6\.6\.1p1\x20Ubuntu-2ubuntu2\.10\r\n");
+
+Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 59.08 seconds
