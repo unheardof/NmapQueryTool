@@ -192,6 +192,16 @@ class HostData:
             base_dict[key.upper()] = value_str
 
         # 'IP', 'HOSTNAME', 'OS', 'DEVICE TYPE', 'PORT NUMBER', 'PROTOCOL', 'STATE', 'SERVICE', 'VERSION'
+<<<<<<< HEAD
+
+        # TODO: Remove
+        # base_columns = []
+        # base_columns.append(self.ip)
+        # base_columns.append(value_as_str(self.hostname))
+        # base_columns.append('; '.join(self.os_list))
+        # base_columns.append('; '.join(self.device_types))
+=======
+>>>>>>> Added an additional sample nmap output file and implemented support for outputing arbitrary service information fields when writing to a CSV
 
         for port in self.data_by_port_number:
             # Create a copy of the base_dict to prevent editing that dictionary directly
@@ -311,7 +321,11 @@ class ScanData:
     def get_headers(self):
         headers = HostData.DEFAULT_HOST_DATA_COLUMNS + PortData.PORT_DATA_COLUMNS
         for ip in self.host_data_by_ip:
+<<<<<<< HEAD
+            for key in self.additional_service_info:
+=======
             for key in self.host_data_by_ip[ip].additional_service_info:
+>>>>>>> Added an additional sample nmap output file and implemented support for outputing arbitrary service information fields when writing to a CSV
                 header_value = key.upper()
                 if not header_value in headers:
                     headers.append(header_value)
@@ -699,7 +713,11 @@ def handle_queries(data):
     print("'save': saves the results from the previous query")
     print("'count': prints the number of results returned by the previous query")
     print("'results': view the previous set of results")
+<<<<<<< HEAD
+    print("'all': load all available data as the current result set")
+=======
     print("'reset': load all available data as the current result set")
+>>>>>>> Added an additional sample nmap output file and implemented support for outputing arbitrary service information fields when writing to a CSV
     print('%s\n' % DIVIDER)
 
     context = InteractionContext(data)

@@ -1,0 +1,80 @@
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2018-05-12 18:32 UTC
+Nmap scan report for ip-172-31-0-78.us-east-2.compute.internal (172.31.0.78)
+Host is up (0.0042s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-1-38.us-east-2.compute.internal (172.31.1.38)
+Host is up (0.0038s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-2-48.us-east-2.compute.internal (172.31.2.48)
+Host is up (0.0027s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-2-94.us-east-2.compute.internal (172.31.2.94)
+Host is up (0.0028s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-3-72.us-east-2.compute.internal (172.31.3.72)
+Host is up (0.0028s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-3-189.us-east-2.compute.internal (172.31.3.189)
+Host is up (0.0032s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-3-244.us-east-2.compute.internal (172.31.3.244)
+Host is up (0.0035s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-7-206.us-east-2.compute.internal (172.31.7.206)
+Host is up (0.0030s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-11-65.us-east-2.compute.internal (172.31.11.65)
+Host is up (0.00013s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-12-180.us-east-2.compute.internal (172.31.12.180)
+Host is up (0.0027s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Nmap scan report for ip-172-31-14-47.us-east-2.compute.internal (172.31.14.47)
+Host is up (0.00075s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.33 ((Amazon) mod_wsgi/3.5 Python/3.6.5)
+
+Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 4096 IP addresses (11 hosts up) scanned in 133.87 seconds
