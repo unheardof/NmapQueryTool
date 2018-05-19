@@ -1,5 +1,7 @@
 import sys, getopt, re, os, csv
 
+# Note: this script is Python 3.6 compatible only (i.e. no Python 2.7 support)
+
 DIVIDER = '--------------------------------------------------------------------------------'
 
 DEFAULT_OUTPUT_FILE = 'nmap_results_parsed.csv'
@@ -169,40 +171,51 @@ class HostData:
 
         return '\n'.join(lines)
 
-    @staticmethod
-    def get_headers():
-        return HostData.DEFAULT_HOST_DATA_COLUMNS + PortData.PORT_DATA_COLUMNS
+    # Will return a list of dictionaries, with each dictionary containing
+    # all of the data for a single row / record in the ultimate output report
+    def to_list_of_records(self):
+        records = []
+        base_dict = {}
 
-    def get_csv_rows(self):
-        rows = []
+        base_dict['IP'] = value_as_str(self.ip)
+        base_dict['HOSTNAME'] = value_as_str(self.hostname)
+        base_dict['OS'] = '; '.join(self.os_list)
+        base_dict['DEVICE TYPE'] = '; '.join(self.device_types)
 
-        # TODO: Fix this
-        # For right now, any additional service information will be excluded from the CSV output
+        for key in self.additional_service_info:
+            value_str = None
+            if type(self.additional_service_info[key]) == list:
+                value_str = ','.join(self.additional_service_info[key])
+            else:
+                value_str = self.additional_service_info[key]
+
+            base_dict[key.upper()] = value_str
 
         # 'IP', 'HOSTNAME', 'OS', 'DEVICE TYPE', 'PORT NUMBER', 'PROTOCOL', 'STATE', 'SERVICE', 'VERSION'
-        base_columns = []
-        base_columns.append(self.ip)
-        base_columns.append(value_as_str(self.hostname))
-        base_columns.append('; '.join(self.os_list))
-        base_columns.append('; '.join(self.device_types))
+
+        # TODO: Remove
+        # base_columns = []
+        # base_columns.append(self.ip)
+        # base_columns.append(value_as_str(self.hostname))
+        # base_columns.append('; '.join(self.os_list))
+        # base_columns.append('; '.join(self.device_types))
 
         for port in self.data_by_port_number:
+            # Create a copy of the base_dict to prevent editing that dictionary directly
+            data_dict = base_dict.copy()
             port_data = self.data_by_port_number[port]
 
-            # Create a copy of the base_columns list (otherwise the base_columns list will have items added to it since 'columns' and 'base_columns' would refer to the same list)
-            columns = [i for i in base_columns]
-            columns.append(value_as_str(port_data.port_number))
-            columns.append(value_as_str(port_data.protocol))
-            columns.append(value_as_str(port_data.state))
-            columns.append(value_as_str(port_data.service))
+            data_dict['PORT NUMBER'] = value_as_str(port_data.port_number)
+            data_dict['PROTOCOL'] = value_as_str(port_data.protocol)
+            data_dict['STATE'] = value_as_str(port_data.state)
+            data_dict['SERVICE'] = value_as_str(port_data.service)
 
-            # TODO: Integrate this as a function instead of a special case
             # Escape any comma's in the service version
-            columns.append(value_as_str(port_data.version.replace(',', ''))) 
+            data_dict['VERSION'] = value_as_str(port_data.version.replace(',', ''))
 
-            rows.append(','.join(columns))
+            records.append(data_dict)
 
-        return rows
+        return records
 
     def clone(self):
         new_host_data = HostData(self.ip, self.hostname)
@@ -259,7 +272,7 @@ class HostData:
                 if port_data.state == state:
                     match_found = True
 
-                    print 'Clone of port data for port %s: %s' % (port, str(port_data.clone()))
+                    print('Clone of port data for port %s: %s' % (port, str(port_data.clone())))
                     new_data_by_port_number[port] = port_data.clone()
 
         filtered_host_data.data_by_port_number = new_data_by_port_number
@@ -302,13 +315,35 @@ class ScanData:
 
         return '\n'.join(lines)
 
+    def get_headers(self):
+        headers = HostData.DEFAULT_HOST_DATA_COLUMNS + PortData.PORT_DATA_COLUMNS
+        for ip in self.host_data_by_ip:
+            for key in self.additional_service_info:
+                header_value = key.upper()
+                if not header_value in headers:
+                    headers.append(header_value)
+                
+        return headers
+
     def to_csv_string(self):
         rows = []
-        rows.append(','.join(HostData.get_headers()))
+        headers = self.get_headers()
+        rows.append(','.join(headers))
 
         for ip in self.host_data_by_ip:
             host_data = self.host_data_by_ip[ip]
-            rows += host_data.get_csv_rows()
+            host_data_records = host_data.to_list_of_records()
+            for record in host_data_records:
+                record_row_data  = []
+                # Iterate over the headers in order to ensure that the
+                # data in the final CSV rows will be in the correct column
+                for header in headers:
+                    if header in record:
+                        record_row_data.append(record[header])
+                    else:
+                        record_row_data.append('')
+
+                rows.append(','.join(record_row_data))
 
         return '\n'.join(rows)
 
@@ -438,6 +473,8 @@ class ScanData:
         return results_data
 
     def save(self, filename, style = 'default'):
+        # TODO: Remove
+        print("Style: %s" % style)
         if style == 'default':
             write_to_file(filename, str(self))
         elif style == 'csv':
@@ -449,7 +486,7 @@ class ScanData:
         return len(self.host_data_by_ip.keys())
 
     def print_data(self):
-        print str(self)
+        print(str(self))
 
     # TODO: Add other query operations
 
@@ -457,38 +494,38 @@ class InteractionContext:
     def __init__(self, scan_data):
         self.scan_data = scan_data
         self.quit = False
-        self.results = None
+        self.results = scan_data
         self.return_to_previous = False 
 
     def print_count(self):
         if self.results == None:
-            print '\nNo results are available\n'
+            print('\nNo results are available\n')
         else:
-            print '\nResults Count: %d\n' % self.results.count_records()
+            print('\nResults Count: %d\n' % self.results.count_records())
 
     def print_results(self):
         if self.results == None or self.results.count_records() == 0:
-            print '\nResuls set is empty\n'
+            print('\nResuls set is empty\n')
         else:
-            print '\n%s' % DIVIDER
-            print 'Results'
-            print '%s\n\n' % DIVIDER
-            print self.results
+            print('\n%s' % DIVIDER)
+            print('Results')
+            print('%s\n\n' % DIVIDER)
+            print(self.results)
 
     # TODO: Add support for saving both in plaintext table format (current) and CSV
     def save(self):
         if self.results == None: 
-            print '\nThere is nothing to save\n'
+            print('\nThere is nothing to save\n')
         else:
             while True:
-                response = raw_input('\nWhat would you like the output file to be called?\n\n')
+                response = input('\nWhat would you like the output file to be called?\n\n')
 
                 if response in ('back', 'previous'):
                     return
 
                 filename = response
                 if os.path.exists(filename):
-                    response = raw_input('\nFile "%s" already exists; do you want to overwrite it (y/n)?\n\n' % filename)
+                    response = input('\nFile "%s" already exists; do you want to overwrite it (y/n)?\n\n' % filename)
                     if response == 'y':
                         write_to_file(filename, str(self.results))
                         break
@@ -554,23 +591,22 @@ def short_opt_string():
     return short_options
 
 def print_usage_and_exit(exit_code):
-    print usage_msg()
+    print(usage_msg())
     sys.exit(exit_code)
 
 def write_to_file(filename, content):
-    f = open(filename, 'w')
-    f.write(content)
-    f.close()
+    with open(filename, 'w') as f:
+        f.write(content)
 
 def handle_input(prompt, help_msg, context):
     while True:
-        response = raw_input('\n%s\n\n' % prompt)
+        response = input('\n%s\n\n' % prompt)
         if response == 'quit':
             context.quit = True # Break out of the interactive query loop
             break
 
         if response == 'help':
-            print '\n%s\n' % help_msg
+            print('\n%s\n' % help_msg)
         elif response == 'save':
             context.save()
         elif response == 'count':
@@ -585,6 +621,7 @@ def handle_input(prompt, help_msg, context):
 
     return response, context
 
+# TODO: Ensure the provided filter string is valid
 def parse_filter_string(str):
     # Allow "22,33,44" and "22, 33, 44" (and "22,33, 44")
     return [s.strip() for s in str.split(',')]
@@ -658,24 +695,24 @@ def handle_device_query(context):
     return context
 
 def handle_queries(data):
-    print '\n%s' % DIVIDER
-    print "Entering query mode\n"
-    print "The following commands can be used at any time:\n"
-    print "'quit': exits the program"
-    print "'help': gets help"
-    print "'back' or 'previous': go back to the previous menu"
-    print "'save': saves the results from the previous query"
-    print "'count': prints the number of results returned by the previous query"
-    print "'results': view the previous set of results"
-    print "'all': load all available data as the current result set"
-    print '%s\n' % DIVIDER
+    print('\n%s' % DIVIDER)
+    print("Entering query mode\n")
+    print("The following commands can be used at any time:\n")
+    print("'quit': exits the program")
+    print("'help': gets help")
+    print("'back' or 'previous': go back to the previous menu")
+    print("'save': saves the results from the previous query")
+    print("'count': prints the number of results returned by the previous query")
+    print("'results': view the previous set of results")
+    print("'all': load all available data as the current result set")
+    print('%s\n' % DIVIDER)
 
     context = InteractionContext(data)
     while not context.quit:
         response, context = handle_input('What information are you interested in?', 'Your current query options are: port, ip, os, and device', context)
 
         if context.return_to_previous:
-            print "\nCannot go back; there is nowhere to return to\n"
+            print("\nCannot go back; there is nowhere to return to\n")
             context.return_to_previous = False
             continue
 
@@ -694,9 +731,9 @@ def handle_queries(data):
         elif response == 'all':
             context.results = context.scan_data
         else:
-            print "\nUnknown command '%s' entered; please try again\n" % response
+            print("\nUnknown command '%s' entered; please try again\n" % response)
 
-def filter_data(data, ports_filter, ips_filter):
+def filter_data(data, ports_filter, ips_filter, os_filter, device_type_filter):
     filtered_data = data
 
     if ports_filter:
@@ -704,6 +741,12 @@ def filter_data(data, ports_filter, ips_filter):
 
     if ips_filter:
         filtered_data = data.query_by_ip(ips_filter)
+
+    if os_filter:
+        filtered_data = data.query_by_os_prefix(os_filter)
+
+    if device_type_filter:
+        filtered_data = data.query_by_device_prefix(device_type_filter)
 
     return filtered_data    
 
@@ -718,37 +761,54 @@ def main(argv):
 
     input_file = None # Default to reading the scan results from STDIN
     output_file = None # Default to writing output to STDOUT
-    ports_filter = None # Default to including all port results in the output
-    ips_filter = None # Default to including the results for all IP addresses in the output
+
+    # Default to including all data which is not expictly filtered out
+    ports_filter = None
+    ips_filter = None
+    os_filter = None
+    device_type_filter = None
+    
     output_format = 'default'
     query_mode = False # Indicates whether or not the user wants to perform interactive queries (defaults to false)
 
+    if len(opts) == 0:
+        print_usage_and_exit(0)
+        
     for opt, arg in opts:
         if opt in ('-h', '--help'):
             print_usage_and_exit(0)
         elif opt in ('-i', '--input-file'):
-            input_file = arg # TODO: Ensure this is a valid, existing file
+            if not os.path.isfile(arg):
+                print("\nInvalid input file '%s'; file does not exist\n" % arg)
+                sys.exit(1)
+                
+            input_file = arg
         elif opt in ('-o', '--output-file'):
             output_file = arg
         elif opt in ('-p', '--ports'):
-            # TODO: Ensure the provided filter string is valid
             ports_filter = parse_filter_string(arg)
         elif opt in ('-a', '--ip-addrs'):
-            # TODO: Ensure the provided filter string is valid
             ips_filter = parse_filter_string(arg)
+        elif opt in ('-os', '--operating-system'):
+            os_filter = parse_filter_string(arg)
+        elif opt in ('-d', '--device-type'):
+            device_type_filter = parse_filter_string(arg)
         elif opt in ('-c', '--output-csv'):
             output_format = 'csv'
         elif opt in ('-q', '--query-mode'):
             query_mode = True
         else:
-            print "\nUnknown option '%s' encountered" % (opt)
+            print("\nUnknown option '%s' encountered" % (opt))
             print_usage_and_exit(0)
 
     if query_mode and (ports_filter != None or ips_filter != None or output_file != None):
-        print "\nError: can only use the -i / --input-file option when running in query mode (-q / --query-mode)\n"
+        print("\nError: can only use the -i / --input-file option when running in query mode (-q / --query-mode)\n")
         sys.exit(2)
 
     if input_file == None:
+        if query_mode:
+            print("Reading data from STDIN...\n")
+            
         data = ScanData.create_from_nmap_data(sys.stdin)
     else:
         with open(input_file, 'r') as f:
@@ -757,7 +817,7 @@ def main(argv):
     if query_mode:
         handle_queries(data)
     else:
-        data = filter_data(data, ports_filter, ips_filter) # TODO: Add OS and device type filters
+        data = filter_data(data, ports_filter, ips_filter, os_filter, device_type_filter)
         
         if output_file != None:
             data.save(output_file, output_format)
