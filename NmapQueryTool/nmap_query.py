@@ -1,3 +1,6 @@
+# From the 'future' package
+from builtins import input
+
 import sys, getopt, re, os, csv
 
 # TODO: Split each class into its own file
@@ -443,7 +446,7 @@ class ScanData:
     def create_from_nmap_data(data_source):
         scan_data = ScanData()
 
-        for line in data_source.split('\n'):
+        for line in data_source:
             if re.match('Nmap scan report for .*', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
 
@@ -622,6 +625,7 @@ def write_to_file(filename, content):
 def handle_input(prompt, help_msg, context):
     while True:
         response = input('\n%s\n\n' % prompt)
+
         if response == 'quit':
             context.quit = True # Break out of the interactive query loop
             break
