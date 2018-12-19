@@ -1,5 +1,7 @@
 import sys, getopt, re, os, csv
 
+# TODO: Split each class into its own file
+
 # Note: this script is Python 3.6 compatible only (i.e. no Python 2.7 support)
 
 DIVIDER = '--------------------------------------------------------------------------------'
@@ -114,6 +116,16 @@ class PortData:
 
         return ' '.join(tokens)
 
+    def as_dict(self):
+        d = {}
+        d['port_number'] = value_as_str(self.port_number)
+        d['protocol'] = value_as_str(self.protocol)
+        d['state'] = value_as_str(self.state)
+        d['service'] = value_as_str(self.service)
+        d['version'] = value_as_str(self.version)
+
+        return d
+
     def clone(self):
         new_port_data = PortData(self.port_number, self.protocol)
         new_port_data.state = self.state
@@ -171,6 +183,24 @@ class HostData:
 
         return '\n'.join(lines)
 
+    def as_dict(self):
+        d = {}
+        d['ip'] = self.ip
+        d['hostname'] = self.hostname
+        d['os_list'] = self.os_list
+        d['device_types'] = self.device_types
+
+        for key in self.additional_service_info:
+            d[key] = self.additional_service_info[key]
+
+        serialized_port_data = {}
+        for port_number in self.data_by_port_number:
+            serialized_port_data[value_as_str(port_number)] = self.data_by_port_number[port_number].as_dict()
+
+        d['port_data'] = serialized_port_data
+        
+        return d
+
     # Will return a list of dictionaries, with each dictionary containing
     # all of the data for a single row / record in the ultimate output report
     def to_list_of_records(self):
@@ -192,7 +222,6 @@ class HostData:
             base_dict[key.upper()] = value_str
 
         # 'IP', 'HOSTNAME', 'OS', 'DEVICE TYPE', 'PORT NUMBER', 'PROTOCOL', 'STATE', 'SERVICE', 'VERSION'
-
         for port in self.data_by_port_number:
             # Create a copy of the base_dict to prevent editing that dictionary directly
             data_dict = base_dict.copy()
@@ -341,13 +370,80 @@ class ScanData:
         return '\n'.join(rows)
 
     def ips(self):
-        self.host_data_by_ip.keys()
+        return self.host_data_by_ip.keys()
+
+    def host_data_list(self):
+        return self.host_data_by_ip.values()        
+
+    def add_host_data(self, host_ip, host_data):
+        # TODO: Add logic for merging HostData objects
+        if host_ip in self.host_data_by_ip:
+            raise Exception('Host data already exists for %s' % host_ip)
+        else:
+            self.host_data_by_ip[host_ip] = host_data
+
+    def query_by_port(self, port_numbers):
+        results_data = ScanData()
+
+        for ip in self.host_data_by_ip:
+            result_host_data = self.host_data_by_ip[ip].filter_by_port(port_numbers)
+            if result_host_data != None:
+                results_data.add_host_data(ip, result_host_data)
+
+        return results_data
+
+    def query_by_ip(self, ip_addresses):
+        results_data = ScanData()
+
+        for ip in self.host_data_by_ip:
+            if ip in ip_addresses:
+                results_data.add_host_data(ip, self.host_data_by_ip[ip].clone())
+
+        return results_data
+
+    def query_by_cidr(self, cidr_blocks):
+        # TODO: Implement
+        raise Exception('Querying by CIDR block is not currently supported')
+
+    def query_by_os_prefix(self, os_prefixes):
+        results_data = ScanData()
+
+        for ip in self.host_data_by_ip:
+            host_data = self.host_data_by_ip[ip]
+            if host_data.os_is_any_of(os_prefixes):
+                results_data.add_host_data(ip, host_data.clone())
+
+        return results_data
+
+    def query_by_device_prefix(self, device_prefixes):
+        results_data = ScanData()
+
+        for ip in self.host_data_by_ip:
+            host_data = self.host_data_by_ip[ip]
+            if host_data.device_type_is_any_of(device_prefixes):
+                results_data.add_host_data(ip, host_data.clone())
+
+        return results_data
+
+    def save(self, filename, style = 'default'):
+        if style == 'default':
+            write_to_file(filename, str(self))
+        elif style == 'csv':
+            write_to_file(filename, self.to_csv_string())
+        else:
+            raise Exception("'%s' is not a supported output format" % style)
+
+    def count_records(self):
+        return len(self.host_data_by_ip.keys())
+
+    def print_data(self):
+        print(str(self))
 
     @staticmethod
     def create_from_nmap_data(data_source):
         scan_data = ScanData()
 
-        for line in data_source:
+        for line in data_source.split('\n'):
             if re.match('Nmap scan report for .*', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
 
@@ -414,75 +510,7 @@ class ScanData:
                 continue
 
         return scan_data
-
-    def add_host_data(self, host_ip, host_data):
-        # TODO: Add logic for merging HostData objects
-        if host_ip in self.host_data_by_ip:
-            raise Exception('Host data already exists for %s' % host_ip)
-        else:
-            self.host_data_by_ip[host_ip] = host_data
-
-    def query_by_port(self, port_numbers):
-        results_data = ScanData()
-
-        for ip in self.host_data_by_ip:
-            result_host_data = self.host_data_by_ip[ip].filter_by_port(port_numbers)
-            if result_host_data != None:
-                results_data.add_host_data(ip, result_host_data)
-
-        return results_data
-
-    def query_by_ip(self, ip_addresses):
-        results_data = ScanData()
-
-        for ip in self.host_data_by_ip:
-            if ip in ip_addresses:
-                results_data.add_host_data(ip, self.host_data_by_ip[ip].clone())
-
-        return results_data
-
-    def query_by_cidr(self, cidr_blocks):
-        # TODO: Implement
-        raise Exception('Querying by CIDR block is not currently supported')
-
-    def query_by_os_prefix(self, os_prefixes):
-        results_data = ScanData()
-
-        for ip in self.host_data_by_ip:
-            host_data = self.host_data_by_ip[ip]
-            if host_data.os_is_any_of(os_prefixes):
-                results_data.add_host_data(ip, host_data.clone())
-
-        return results_data
-
-    def query_by_device_prefix(self, device_prefixes):
-        results_data = ScanData()
-
-        for ip in self.host_data_by_ip:
-            host_data = self.host_data_by_ip[ip]
-            if host_data.device_type_is_any_of(device_prefixes):
-                results_data.add_host_data(ip, host_data.clone())
-
-        return results_data
-
-    def save(self, filename, style = 'default'):
-        # TODO: Remove
-        print("Style: %s" % style)
-        if style == 'default':
-            write_to_file(filename, str(self))
-        elif style == 'csv':
-            write_to_file(filename, self.to_csv_string())
-        else:
-            raise Exception("'%s' is not a supported output format" % style)
-
-    def count_records(self):
-        return len(self.host_data_by_ip.keys())
-
-    def print_data(self):
-        print(str(self))
-
-    # TODO: Add other query operations
-
+        
 class InteractionContext:
     def __init__(self, scan_data):
         self.scan_data = scan_data
@@ -530,9 +558,9 @@ class InteractionContext:
 
 def value_as_str(value):
     if value == None:
-        return ''
+        value = ''
 
-    return value
+    return value.encode('utf-8')
 
 def prep_option(opt_definition):
     opt_str = "[-%s" % (opt_definition['short'])
@@ -550,11 +578,11 @@ def usage_msg():
     lines.append("Tool for extracting specific information from Nmap scan results")
     lines.append("")
     lines.append("")
-    lines.append("Usage: python nmap-query.py %s" % (" ".join(options)))
+    lines.append("Usage: python nmap_query.py %s" % (" ".join(options)))
     lines.append("")
     lines.append("\tNote: the nmap scan results can be provided either through an input file or from STDIN (through a pipe)")
     lines.append("")
-    lines.append("\tExample: nmap -sV 10.0.0.0/24 | python nmap-query.py -q")
+    lines.append("\tExample: nmap -sV 10.0.0.0/24 | python nmap_query.py -q")
     lines.append("")
     lines.append("")
     lines.append("")
