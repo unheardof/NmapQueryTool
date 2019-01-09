@@ -262,6 +262,8 @@ class HostData:
             self.data_by_port_number[port_data.port_number] = port_data
 
     def add_os_data(self, os_data):
+        if os_data is None:
+            print("WARNING: OS data is empty")
         if type(os_data) is list:
             self.os_list += os_data
         elif type(os_data) is str:
@@ -446,7 +448,7 @@ class ScanData:
     def create_from_nmap_data(data_source):
         scan_data = ScanData()
 
-        for line in data_source:
+        for line in data_source.split("\n"):
             if re.match('Nmap scan report for .*', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
 
@@ -492,6 +494,11 @@ class ScanData:
     
                 scan_data.host_data_by_ip[host_ip].add_data(port_data)
 
+            elif re.match('OS details: (.*)', line):
+                result = re.match('OS details: (.*)', line)
+                os_info_str = result.group(1)
+                scan_data.host_data_by_ip[host_ip].add_os_data(os_info_str.split(','))
+                
             elif re.match('Service Info: (.*)', line):
                 result = re.match('Service Info: (.*)', line)
                 service_info_str = result.group(1)

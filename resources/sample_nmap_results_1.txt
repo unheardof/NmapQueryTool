@@ -9,6 +9,8 @@ PORT      STATE    SERVICE    VERSION
 80/tcp    open     http       Apache httpd 2.4.7 ((Ubuntu))
 9929/tcp  open     nping-echo Nping echo
 31337/tcp open     tcpwrapped
+Running: Linux 2.6.x
+OS details: Linux 2.6.13 - 2.6.31, Linux 2.6.18
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
 SF-Port22-TCP:V=6.40%I=7%D=3/3%Time=5A9B5F06%P=x86_64-pc-linux-gnu%r(NULL,
 SF:2C,"SSH-2\.0-OpenSSH_6\.6\.1p1\x20Ubuntu-2ubuntu2\.10\r\n");
