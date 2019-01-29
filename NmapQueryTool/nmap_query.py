@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # From the 'future' package
 from builtins import input
 
