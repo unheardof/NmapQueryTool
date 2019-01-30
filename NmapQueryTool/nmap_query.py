@@ -1,7 +1,4 @@
-#!/usr/bin/python
-
-# From the 'future' package
-from builtins import input
+#!/usr/bin/env python3
 
 import sys, getopt, re, os, csv
 
@@ -113,7 +110,7 @@ class PortData:
         self.version = None
 
     def __str__(self):
-        tokens = [self.port_number]
+        tokens = [str(self.port_number)]
         tokens.append(value_as_str(self.protocol))
         tokens.append(value_as_str(self.state))
         tokens.append(value_as_str(self.service))
@@ -450,7 +447,7 @@ class ScanData:
     def create_from_nmap_data(data_source):
         scan_data = ScanData()
 
-        for line in data_source.split("\n"):
+        for line in data_source:
             if re.match('Nmap scan report for .*', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
 
@@ -572,7 +569,7 @@ def value_as_str(value):
     if value == None:
         value = ''
 
-    return value.encode('utf-8')
+    return str(value)
 
 def prep_option(opt_definition):
     opt_str = "[-%s" % (opt_definition['short'])
