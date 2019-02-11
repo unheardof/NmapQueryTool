@@ -34,7 +34,7 @@ OPTIONS_DEFINITIONS = [
             'short': 's',
             'long': 'operating-system',
             'value_name': 'OS',
-            'usage_msg': '[-s | --operating-system] OS: specify one or more operating systems on which to filter. The following input formats are accepted:\n\n\tSingle operating system: -os Windws\n\tSet of operating systems: -os Windows,Linux\n'
+            'usage_msg': '[-s | --operating-system] OS: specify one or more operating systems on which to filter. The following input formats are accepted:\n\n\tSingle operating system: -s Windws\n\tSet of operating systems: -s Windows,Linux\n'
 
         },
         {
@@ -287,7 +287,7 @@ class HostData:
             if not value in self.additional_service_info[key]:
                 self.additional_service_info[key].append(value)
 
-    def filter_by_port(self, port_numbers, state = 'open'):
+    def filter_by_port(self, port_numbers, state = None):
         filtered_host_data = self.clone()
        
         match_found = False
@@ -295,10 +295,10 @@ class HostData:
         for port in self.data_by_port_number:
             if port in port_numbers:
                 port_data = self.data_by_port_number[port]
-                if port_data.state == state:
-                    match_found = True
 
-                    print('Clone of port data for port %s: %s' % (port, str(port_data.clone())))
+                # Ignore port state unless one is provided to filter on
+                if state is None or port_data.state == state:
+                    match_found = True
                     new_data_by_port_number[port] = port_data.clone()
 
         filtered_host_data.data_by_port_number = new_data_by_port_number
@@ -680,7 +680,7 @@ def handle_port_query(context):
         return context
 
     ports = parse_filter_string(response)
-    context.results = context.scan_data.query_by_port(ports)
+    context.results = context.results.query_by_port(ports)
     context.print_results()
 
     return context
@@ -696,7 +696,7 @@ def handle_ip_query(context):
         return context
 
     ips = parse_filter_string(response)
-    context.results = context.scan_data.query_by_ip(ips)
+    context.results = context.results.query_by_ip(ips)
     context.print_results()
 
     return context    
@@ -709,7 +709,7 @@ def handle_os_query(context):
         return context
 
     target_os_prefixes = parse_filter_string(response)
-    context.results = context.scan_data.query_by_os_prefix(target_os_prefixes)
+    context.results = context.results.query_by_os_prefix(target_os_prefixes)
     context.print_results()
 
     return context
@@ -722,7 +722,7 @@ def handle_device_query(context):
         return context
 
     target_device_prefixes = parse_filter_string(response)
-    context.results = context.scan_data.query_by_device_prefix(target_device_prefixes)
+    context.results = context.results.query_by_device_prefix(target_device_prefixes)
     context.print_results()
 
     return context
@@ -741,6 +741,7 @@ def handle_queries(data):
     print('%s\n' % DIVIDER)
 
     context = InteractionContext(data)
+
     while not context.quit:
         response, context = handle_input('What information are you interested in?', 'Your current query options are: port, ip, os, and device', context)
 
@@ -770,16 +771,16 @@ def filter_data(data, ports_filter, ips_filter, os_filter, device_type_filter):
     filtered_data = data
 
     if ports_filter:
-        filtered_data = data.query_by_port(ports_filter)
+        filtered_data = filtered_data.query_by_port(ports_filter)
 
     if ips_filter:
-        filtered_data = data.query_by_ip(ips_filter)
+        filtered_data = filtered_data.query_by_ip(ips_filter)
 
     if os_filter:
-        filtered_data = data.query_by_os_prefix(os_filter)
+        filtered_data = filtered_data.query_by_os_prefix(os_filter)
 
     if device_type_filter:
-        filtered_data = data.query_by_device_prefix(device_type_filter)
+        filtered_data = filtered_data.query_by_device_prefix(device_type_filter)
 
     return filtered_data    
 
@@ -804,9 +805,6 @@ def main(argv):
     output_format = 'default'
     query_mode = False # Indicates whether or not the user wants to perform interactive queries (defaults to false)
 
-    if len(opts) == 0:
-        print_usage_and_exit(0)
-        
     for opt, arg in opts:
         if opt in ('-h', '--help'):
             print_usage_and_exit(0)
@@ -822,7 +820,7 @@ def main(argv):
             ports_filter = parse_filter_string(arg)
         elif opt in ('-a', '--ip-addrs'):
             ips_filter = parse_filter_string(arg)
-        elif opt in ('-os', '--operating-system'):
+        elif opt in ('-s', '--operating-system'):
             os_filter = parse_filter_string(arg)
         elif opt in ('-d', '--device-type'):
             device_type_filter = parse_filter_string(arg)
@@ -834,13 +832,18 @@ def main(argv):
             print("\nUnknown option '%s' encountered" % (opt))
             print_usage_and_exit(0)
 
-    if query_mode and (ports_filter != None or ips_filter != None or output_file != None):
+    if sys.stdin.isatty() and input_file is None:
+        print("\nMust provide input file when not providing data via a pipe\n")
+        print_usage_and_exit(0)
+
+    if query_mode and (ports_filter != None or ips_filter != None or os_filter != None or output_file != None):
         print("\nError: can only use the -i / --input-file option when running in query mode (-q / --query-mode)\n")
         sys.exit(2)
 
     if input_file == None:
         if query_mode:
-            print("Reading data from STDIN...\n")
+            print("Error: cannot use interactive query mode when reading input from STDIN; please use the -i <INPUT FILE> option when -q is provided")
+            sys.exit(1)
             
         data = ScanData.create_from_nmap_data(sys.stdin)
     else:
