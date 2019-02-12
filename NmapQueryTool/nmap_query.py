@@ -308,10 +308,10 @@ class HostData:
         else:
             return None
 
-    def os_is_any_of(self, os_prefix_list):
+    def os_is_any_of(self, os_list):
         match_found = False
         for os in self.os_list:
-            if any_prefix_matches(os, os_prefix_list):
+            if any_substring_matches(os, os_list):
                 match_found = True
                 break
 
@@ -409,12 +409,12 @@ class ScanData:
         # TODO: Implement
         raise Exception('Querying by CIDR block is not currently supported')
 
-    def query_by_os_prefix(self, os_prefixes):
+    def query_by_os(self, os_list):
         results_data = ScanData()
 
         for ip in self.host_data_by_ip:
             host_data = self.host_data_by_ip[ip]
-            if host_data.os_is_any_of(os_prefixes):
+            if host_data.os_is_any_of(os_list):
                 results_data.add_host_data(ip, host_data.clone())
 
         return results_data
@@ -493,10 +493,10 @@ class ScanData:
     
                 scan_data.host_data_by_ip[host_ip].add_data(port_data)
 
-            elif re.match('OS details: (.*)', line):
-                result = re.match('OS details: (.*)', line)
-                os_info_str = result.group(1)
-                scan_data.host_data_by_ip[host_ip].add_os_data(os_info_str.split(','))
+            elif re.match('OS details\: (.*)', line):
+                result = re.match('OS details\: (.*)', line)
+                os_info = result.group(1).replace(' or ', ' ').split(',')
+                scan_data.host_data_by_ip[host_ip].add_os_data(os_info)
                 
             elif re.match('Service Info: (.*)', line):
                 result = re.match('Service Info: (.*)', line)
@@ -666,6 +666,13 @@ def any_prefix_matches(string, prefixes):
 
     return False
 
+def any_substring_matches(string, substrings):
+    for substring in substrings:
+        if substring in string:
+            return True
+
+    return False
+
 # TODO: Incorporate hostname (when available)
 def create_results_line(ip, port, port_info):
     # IP: PORT PROTOCOL STATE SERVICE VERSION
@@ -708,8 +715,8 @@ def handle_os_query(context):
         context.return_to_previous = False
         return context
 
-    target_os_prefixes = parse_filter_string(response)
-    context.results = context.results.query_by_os_prefix(target_os_prefixes)
+    target_operating_systems = parse_filter_string(response)
+    context.results = context.results.query_by_os(target_operating_systems)
     context.print_results()
 
     return context
@@ -743,6 +750,8 @@ def handle_queries(data):
     context = InteractionContext(data)
 
     while not context.quit:
+        # TODO: Add list of general control commands (help, count, results, quit, etc.) as well
+        # TODO: Make list of commands dynamic instead of static
         response, context = handle_input('What information are you interested in?', 'Your current query options are: port, ip, os, and device', context)
 
         if context.return_to_previous:
@@ -777,7 +786,7 @@ def filter_data(data, ports_filter, ips_filter, os_filter, device_type_filter):
         filtered_data = filtered_data.query_by_ip(ips_filter)
 
     if os_filter:
-        filtered_data = filtered_data.query_by_os_prefix(os_filter)
+        filtered_data = filtered_data.query_by_os(os_filter)
 
     if device_type_filter:
         filtered_data = filtered_data.query_by_device_prefix(device_type_filter)

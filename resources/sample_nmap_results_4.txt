@@ -1,0 +1,71 @@
+Starting Nmap 7.60 ( https://nmap.org ) at 2019-02-12 16:16 UTC
+Nmap scan report for 10.10.10.10
+Host is up (0.0017s latency).
+Not shown: 1018 closed ports
+PORT    STATE SERVICE
+25/tcp  open  smtp
+42/tcp  open  nameserver
+80/tcp  open  http
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 2012|7|8.1
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_7:::ultimate cpe:/o:microsoft:windows_8.1
+OS details: Microsoft Windows Server 2012 R2 Update 1, Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1
+Network Distance: 6 hops
+
+Nmap scan report for 10.10.10.20
+Host is up (0.0020s latency).
+Not shown: 1020 closed ports
+PORT    STATE    SERVICE
+80/tcp  open     http
+135/tcp filtered msrpc
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 7|2012|8.1
+OS CPE: cpe:/o:microsoft:windows_7:::ultimate cpe:/o:microsoft:windows_2012 cpe:/o:microsoft:windows_8.1
+OS details: Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1
+Network Distance: 6 hops
+
+Nmap scan report for 10.10.10.50
+Host is up (0.00074s latency).
+Not shown: 1015 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+23/tcp  open  telnet
+80/tcp  open  http
+111/tcp open  rpcbind
+443/tcp open  https
+512/tcp open  exec
+513/tcp open  login
+514/tcp open  shell
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 6 hops
+
+Nmap scan report for 10.10.10.60
+Host is up (0.0016s latency).
+Not shown: 1015 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+23/tcp  open  telnet
+53/tcp  open  domain
+80/tcp  open  http
+111/tcp open  rpcbind
+443/tcp open  https
+513/tcp open  login
+514/tcp open  shell
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 6 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 255 IP addresses (4 hosts up) scanned in 99.05 seconds
