@@ -1,4 +1,4 @@
-from lib.nmap_data import NmapData
+from .nmap_data import NmapData
 
 class HostData(NmapData):
 

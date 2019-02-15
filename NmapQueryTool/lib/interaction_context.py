@@ -1,6 +1,6 @@
 import os
 
-from lib.nmap_data import NmapData
+from .nmap_data import NmapData
 
 class InteractionContext:
     def __init__(self, scan_data):

@@ -1,8 +1,8 @@
 import re
 
-from lib.nmap_data import NmapData
-from lib.host_data import HostData
-from lib.port_data import PortData
+from .nmap_data import NmapData
+from .host_data import HostData
+from .port_data import PortData
 
 class ScanData(NmapData):
 

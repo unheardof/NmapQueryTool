@@ -1,4 +1,4 @@
-from lib.nmap_data import NmapData
+from .nmap_data import NmapData
 
 class PortData(NmapData):
     PORT_DATA_COLUMNS = ['PORT NUMBER', 'PROTOCOL', 'STATE', 'SERVICE', 'VERSION']
