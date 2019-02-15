@@ -61,10 +61,10 @@ class HostData(NmapData):
 
         serialized_port_data = {}
         for port_number in self.data_by_port_number:
-            serialized_port_data[value_as_str(port_number)] = self.data_by_port_number[port_number].as_dict()
+            serialized_port_data[self.value_as_str(port_number)] = self.data_by_port_number[port_number].as_dict()
 
         d['port_data'] = serialized_port_data
-        
+
         return d
 
     # Will return a list of dictionaries, with each dictionary containing
@@ -73,8 +73,8 @@ class HostData(NmapData):
         records = []
         base_dict = {}
 
-        base_dict['IP'] = value_as_str(self.ip)
-        base_dict['HOSTNAME'] = value_as_str(self.hostname)
+        base_dict['IP'] = self.value_as_str(self.ip)
+        base_dict['HOSTNAME'] = self.value_as_str(self.hostname)
         base_dict['OS'] = '; '.join(self.os_list)
         base_dict['DEVICE TYPE'] = '; '.join(self.device_types)
 
@@ -93,13 +93,13 @@ class HostData(NmapData):
             data_dict = base_dict.copy()
             port_data = self.data_by_port_number[port]
 
-            data_dict['PORT NUMBER'] = value_as_str(port_data.port_number)
-            data_dict['PROTOCOL'] = value_as_str(port_data.protocol)
-            data_dict['STATE'] = value_as_str(port_data.state)
-            data_dict['SERVICE'] = value_as_str(port_data.service)
+            data_dict['PORT NUMBER'] = self.value_as_str(port_data.port_number)
+            data_dict['PROTOCOL'] = self.value_as_str(port_data.protocol)
+            data_dict['STATE'] = self.value_as_str(port_data.state)
+            data_dict['SERVICE'] = self.value_as_str(port_data.service)
 
             # Escape any comma's in the service version
-            data_dict['VERSION'] = value_as_str(port_data.version.replace(',', ''))
+            data_dict['VERSION'] = self.value_as_str(port_data.version.replace(',', ''))
 
             records.append(data_dict)
 
@@ -111,7 +111,7 @@ class HostData(NmapData):
         new_host_data.device_types = self.device_types
         new_host_data.additional_service_info = self.additional_service_info
         new_host_data.data_by_port_number = {}
-        
+
         for port in self.data_by_port_number:
             new_host_data.data_by_port_number[port] = self.data_by_port_number[port].clone()
 
@@ -153,7 +153,7 @@ class HostData(NmapData):
 
     def filter_by_port(self, port_numbers, state = None):
         filtered_host_data = self.clone()
-       
+
         match_found = False
         new_data_by_port_number = {}
         for port in self.data_by_port_number:
