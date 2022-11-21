@@ -1,0 +1,73 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:05 EDT
+Nmap scan report for 192.168.66.53
+Host is up (0.097s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+MAC Address: 00:50:56:84:D7:AA (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 5.72 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:05 EDT
+Nmap scan report for 192.168.66.53
+Host is up (0.078s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+MAC Address: 00:50:56:84:D7:AA (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 5.82 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:05 EDT
+Stats: 0:05:02 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 78.79% done; ETC: 22:12 (0:01:21 remaining)
+Nmap scan report for 192.168.66.53
+Host is up (0.080s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 3863 guesses in 607 seconds, average tps: 6.8
+MAC Address: 00:50:56:84:D7:AA (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 609.75 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:15 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.73 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:15 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.66 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:15 EDT
+Nmap scan report for 192.168.66.53
+Host is up (0.16s latency).
+
+PORT   STATE    SERVICE VERSION
+21/tcp filtered ftp
+MAC Address: 00:50:56:84:D7:AA (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 5.76 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:16 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.50 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:00 EDT
+Nmap scan report for 192.168.66.53
+Host is up (0.096s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+MAC Address: 00:50:56:84:D7:AA (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.09 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:16 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.60 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 21:29 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.82 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 21:32 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.49 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 22:16 EDT
+Nmap done: 1 IP address (0 hosts up) scanned in 1.62 seconds

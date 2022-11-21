@@ -1,0 +1,61 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-25 11:18 EDT
+Nmap scan report for 172.24.20.1
+Host is up (0.0020s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE VERSION
+20222/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze8 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.24.20.2
+Host is up (0.0028s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE    VERSION
+53/tcp open  domain     dnsmasq 2.79
+80/tcp open  http-proxy HAProxy http proxy 1.3.1 or later
+Service Info: Device: load balancer
+
+Nmap scan report for 172.24.20.3
+Host is up (0.0025s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE    VERSION
+53/tcp open  domain     dnsmasq 2.79
+80/tcp open  http-proxy HAProxy http proxy 1.3.1 or later
+Service Info: Device: load balancer
+
+Nmap scan report for 172.24.20.95
+Host is up (0.0020s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 9 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.24.20.96
+Host is up (0.0020s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 9 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.24.20.97
+Host is up (0.0028s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 9 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.24.20.98
+Host is up (0.0027s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 9 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.24.20.99
+Host is up (0.00027s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 9 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 8 IP addresses (8 hosts up) scanned in 8.48 seconds

@@ -1,0 +1,1354 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.5 [1 port]
+Completed ARP Ping Scan at 15:34, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.01s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.5 [1 port]
+Discovered open port 139/tcp on 10.11.1.5
+Completed SYN Stealth Scan at 15:34, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.5.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 17.83s elapsed
+Nmap scan report for 10.11.1.5
+Host is up (0.041s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:65:70 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 18.42 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.7 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.7 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.45s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.7.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.7
+Host is up (0.038s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:3C:9D (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.97 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.8 [1 port]
+Completed ARP Ping Scan at 15:34, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.8 [1 port]
+Discovered open port 139/tcp on 10.11.1.8
+Completed SYN Stealth Scan at 15:34, 0.28s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.8.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.99s elapsed
+Nmap scan report for 10.11.1.8
+Host is up (0.055s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:0E:EC (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.79 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.10 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.10 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.51s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.10.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.10
+Host is up (0.046s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:93:6C:24 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.07 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.13 [1 port]
+Completed ARP Ping Scan at 15:34, 0.24s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.13 [1 port]
+Completed SYN Stealth Scan at 15:34, 1.93s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.13.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.13
+Host is up (0.19s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:63:E2 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.64 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (240B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.14 [1 port]
+Completed ARP Ping Scan at 15:34, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.14 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.34s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.14.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.14
+Host is up (0.029s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:0B:07 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.04 seconds
+           Raw packets sent: 4 (144B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.22 [1 port]
+Completed ARP Ping Scan at 15:34, 0.12s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.11s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.22 [1 port]
+Discovered open port 139/tcp on 10.11.1.22
+Completed SYN Stealth Scan at 15:34, 0.12s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.22.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.16s elapsed
+Nmap scan report for 10.11.1.22
+Host is up (0.079s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:35:29 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.89 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.24 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.24 [1 port]
+Discovered open port 139/tcp on 10.11.1.24
+Completed SYN Stealth Scan at 15:34, 0.07s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.24.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.49s elapsed
+Nmap scan report for 10.11.1.24
+Host is up (0.046s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:1F:B3 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.07 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.31 [1 port]
+Completed ARP Ping Scan at 15:34, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.31 [1 port]
+Discovered open port 139/tcp on 10.11.1.31
+Completed SYN Stealth Scan at 15:34, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.31.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.82s elapsed
+Nmap scan report for 10.11.1.31
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:36:0B (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.40 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.35 [1 port]
+Completed ARP Ping Scan at 15:34, 0.24s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.35 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.07s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.35.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.35
+Host is up (0.17s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:31:94 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.79 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (100B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.39 [1 port]
+Completed ARP Ping Scan at 15:34, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.39 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.39.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.39
+Host is up (0.035s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:93:08:67 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.59 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (100B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.44 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.44 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.44.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.44
+Host is up (0.043s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:7E:56 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.63 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.49 [1 port]
+Completed ARP Ping Scan at 15:34, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.05s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.49 [1 port]
+Discovered open port 139/tcp on 10.11.1.49
+Completed SYN Stealth Scan at 15:34, 0.13s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.49.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 2.08s elapsed
+Nmap scan report for 10.11.1.49
+Host is up (0.043s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:13:B1 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.71 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.50 [1 port]
+Completed ARP Ping Scan at 15:34, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.50 [1 port]
+Discovered open port 139/tcp on 10.11.1.50
+Completed SYN Stealth Scan at 15:34, 0.12s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.50.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 2.08s elapsed
+Nmap scan report for 10.11.1.50
+Host is up (0.041s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:1A:52 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.69 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.71 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.71 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.09s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.71.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.71
+Host is up (0.038s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:93:29:72 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.60 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.72 [1 port]
+Completed ARP Ping Scan at 15:34, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.72 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.07s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.72.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.72
+Host is up (0.037s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:0E:98 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.58 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.73 [1 port]
+Completed ARP Ping Scan at 15:34, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.73 [1 port]
+Discovered open port 139/tcp on 10.11.1.73
+Completed SYN Stealth Scan at 15:34, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.73.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.54s elapsed
+Nmap scan report for 10.11.1.73
+Host is up (0.072s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:63:A8 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.19 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.75 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.75 [1 port]
+Discovered open port 139/tcp on 10.11.1.75
+Completed SYN Stealth Scan at 15:34, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.75.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.41s elapsed
+Nmap scan report for 10.11.1.75
+Host is up (0.047s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:1F:73 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.11 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.115 [1 port]
+Completed ARP Ping Scan at 15:34, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.115 [1 port]
+Discovered open port 139/tcp on 10.11.1.115
+Completed SYN Stealth Scan at 15:34, 0.09s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.115.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.18s elapsed
+Nmap scan report for 10.11.1.115
+Host is up (0.045s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:64:77 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.85 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.116 [1 port]
+Completed ARP Ping Scan at 15:34, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.06s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.116 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.15s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.116.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.116
+Host is up (0.045s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:14:91 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.72 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.125 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.125 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.42s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.125.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.125
+Host is up (0.037s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:28:B3 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.128 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.128 [1 port]
+Discovered open port 139/tcp on 10.11.1.128
+Completed SYN Stealth Scan at 15:34, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.128.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.56s elapsed
+Nmap scan report for 10.11.1.128
+Host is up (0.047s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:23:CD (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.20 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.133 [1 port]
+Completed ARP Ping Scan at 15:34, 0.21s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.133 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.18s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.133.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.133
+Host is up (0.17s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:1B:56 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.88 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.136 [1 port]
+Completed ARP Ping Scan at 15:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.136 [1 port]
+Discovered open port 139/tcp on 10.11.1.136
+Completed SYN Stealth Scan at 15:34, 0.10s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.136.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.32s elapsed
+Nmap scan report for 10.11.1.136
+Host is up (0.052s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:1B:7D (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.97 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.141 [1 port]
+Completed ARP Ping Scan at 15:34, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.141 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.09s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.141.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.141
+Host is up (0.037s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:37:5A (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.64 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.145 [1 port]
+Completed ARP Ping Scan at 15:34, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.145 [1 port]
+Discovered open port 139/tcp on 10.11.1.145
+Completed SYN Stealth Scan at 15:34, 0.12s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.145.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.51s elapsed
+Nmap scan report for 10.11.1.145
+Host is up (0.045s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:58:70 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.23 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Initiating ARP Ping Scan at 15:34
+Scanning 10.11.1.146 [1 port]
+Completed ARP Ping Scan at 15:34, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:34
+Completed Parallel DNS resolution of 1 host. at 15:34, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:34
+Scanning 10.11.1.146 [1 port]
+Completed SYN Stealth Scan at 15:34, 0.09s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.146.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Nmap scan report for 10.11.1.146
+Host is up (0.038s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:22:66 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:34
+Completed NSE at 15:34, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.61 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:34 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.202 [1 port]
+Completed ARP Ping Scan at 15:35, 0.40s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.202 [1 port]
+Completed SYN Stealth Scan at 15:35, 1.65s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.202.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.202
+Host is up (0.16s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:22:DA (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.57 seconds
+           Raw packets sent: 4 (144B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.209 [1 port]
+Completed ARP Ping Scan at 15:35, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.209 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.209.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.209
+Host is up (0.14s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:5A:1B (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.73 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.217 [1 port]
+Completed ARP Ping Scan at 15:35, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.217 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.07s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.217.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.217
+Host is up (0.037s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:0D:2F (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.60 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.218 [1 port]
+Completed ARP Ping Scan at 15:35, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.218 [1 port]
+Discovered open port 139/tcp on 10.11.1.218
+Completed SYN Stealth Scan at 15:35, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.218.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.61s elapsed
+Nmap scan report for 10.11.1.218
+Host is up (0.050s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:71:79 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.33 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.219 [1 port]
+Completed ARP Ping Scan at 15:35, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.219 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.43s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.219.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.219
+Host is up (0.038s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:31:CB (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.220 [1 port]
+Completed ARP Ping Scan at 15:35, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.220 [1 port]
+Discovered open port 139/tcp on 10.11.1.220
+Completed SYN Stealth Scan at 15:35, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.220.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.75s elapsed
+Nmap scan report for 10.11.1.220
+Host is up (0.048s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:26:78 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.48 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.221 [1 port]
+Completed ARP Ping Scan at 15:35, 0.15s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.221 [1 port]
+Completed SYN Stealth Scan at 15:35, 1.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.221.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.221
+Host is up (0.10s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:93:67:49 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.74 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.223 [1 port]
+Completed ARP Ping Scan at 15:35, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.223 [1 port]
+Discovered open port 139/tcp on 10.11.1.223
+Completed SYN Stealth Scan at 15:35, 0.11s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.223.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.87s elapsed
+Nmap scan report for 10.11.1.223
+Host is up (0.055s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:32:12 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.54 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.226 [1 port]
+Completed ARP Ping Scan at 15:35, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.226 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.46s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.226.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.226
+Host is up (0.039s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:13:B5 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.03 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.227 [1 port]
+Completed ARP Ping Scan at 15:35, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.227 [1 port]
+Discovered open port 139/tcp on 10.11.1.227
+Completed SYN Stealth Scan at 15:35, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.227.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.59s elapsed
+Nmap scan report for 10.11.1.227
+Host is up (0.038s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:61:C6 (VMware)
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.15 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.229 [1 port]
+Completed ARP Ping Scan at 15:35, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.08s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.229 [1 port]
+Discovered open port 139/tcp on 10.11.1.229
+Completed SYN Stealth Scan at 15:35, 0.13s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.229.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.71s elapsed
+Nmap scan report for 10.11.1.229
+Host is up (0.060s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:38:24 (VMware)
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.48 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.230 [1 port]
+Completed ARP Ping Scan at 15:35, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.230 [1 port]
+Discovered open port 139/tcp on 10.11.1.230
+Completed SYN Stealth Scan at 15:35, 0.13s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.230.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.57s elapsed
+Nmap scan report for 10.11.1.230
+Host is up (0.047s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:76:DF (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.30 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.234 [1 port]
+Completed ARP Ping Scan at 15:35, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.09s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.234 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.09s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.234.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.234
+Host is up (0.097s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:1A:F5 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.75 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.237 [1 port]
+Completed ARP Ping Scan at 15:35, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.237 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.07s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.237.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.237
+Host is up (0.037s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:14:18 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.57 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.238 [1 port]
+Completed ARP Ping Scan at 15:35, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.238 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.08s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.238.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.238
+Host is up (0.046s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:29:D4 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.60 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.247 [1 port]
+Completed ARP Ping Scan at 15:35, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.247 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.42s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.247.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.247
+Host is up (0.037s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:53:39 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.98 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.251 [1 port]
+Completed ARP Ping Scan at 15:35, 0.13s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.07s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.251 [1 port]
+Completed SYN Stealth Scan at 15:35, 1.06s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.251.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.251
+Host is up (0.10s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:31:75 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.68 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:35 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Initiating ARP Ping Scan at 15:35
+Scanning 10.11.1.252 [1 port]
+Completed ARP Ping Scan at 15:35, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:35
+Completed Parallel DNS resolution of 1 host. at 15:35, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:35
+Scanning 10.11.1.252 [1 port]
+Completed SYN Stealth Scan at 15:35, 0.42s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.252.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Nmap scan report for 10.11.1.252
+Host is up (0.037s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:3D:BD (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 15:35
+Completed NSE at 15:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.95 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)

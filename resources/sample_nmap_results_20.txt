@@ -1,0 +1,33 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-25 11:20 EDT
+Nmap scan report for 172.24.1.1
+Host is up (0.0011s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE VERSION
+20222/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze8 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 172.24.1.2
+Host is up (0.0066s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE    VERSION
+53/tcp open  domain     dnsmasq 2.79
+80/tcp open  http-proxy HAProxy http proxy 1.3.1 or later
+Service Info: Device: load balancer
+
+Nmap scan report for 172.24.1.3
+Host is up (0.0038s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE    VERSION
+53/tcp open  domain     dnsmasq 2.79
+80/tcp open  http-proxy HAProxy http proxy 1.3.1 or later
+Service Info: Device: load balancer
+
+Nmap scan report for 172.24.1.4
+Host is up (0.0037s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE VERSION
+20222/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze8 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 4 IP addresses (4 hosts up) scanned in 8.18 seconds

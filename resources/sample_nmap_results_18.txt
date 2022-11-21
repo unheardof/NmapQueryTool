@@ -1,0 +1,555 @@
+Scanning 10.11.1.5...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 10:57 EST
+Nmap scan report for 10.11.1.5
+Host is up (0.039s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE        VERSION
+135/tcp  open  msrpc          Microsoft Windows RPC
+139/tcp  open  netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds   Microsoft Windows XP microsoft-ds
+1025/tcp open  NFS-or-IIS?
+3389/tcp open  ms-wbt-server?
+MAC Address: 00:50:56:89:65:70 (VMware)
+Device type: general purpose
+Running: Microsoft Windows XP
+OS CPE: cpe:/o:microsoft:windows_xp
+OS details: Microsoft Windows XP
+Network Distance: 1 hop
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.50 seconds
+Scanning 10.11.1.7...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 10:57 EST
+Nmap scan report for 10.11.1.7
+Host is up (0.045s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+MAC Address: 00:50:56:89:3C:9D (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|general purpose
+Running (JUST GUESSING): Apple embedded (90%), Microsoft Windows XP (88%), FreeBSD 6.X (85%)
+OS CPE: cpe:/h:apple:airport_extreme cpe:/o:microsoft:windows_xp cpe:/o:freebsd:freebsd:6.2
+Aggressive OS guesses: Apple AirPort Extreme WAP (90%), Microsoft Windows XP (88%), FreeBSD 6.2-RELEASE (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 24.24 seconds
+Scanning 10.11.1.8...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 10:58 EST
+Nmap scan report for 10.11.1.8
+Host is up (0.077s latency).
+Not shown: 990 filtered ports
+PORT     STATE  SERVICE     VERSION
+21/tcp   open   ftp         vsftpd 2.0.1
+22/tcp   open   ssh         OpenSSH 3.9p1 (protocol 1.99)
+25/tcp   closed smtp
+80/tcp   open   http        Apache httpd 2.0.52 ((CentOS))
+111/tcp  open   rpcbind     2 (RPC #100000)
+139/tcp  open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: MYGROUP)
+443/tcp  open   ssl/http    Apache httpd 2.0.52 ((CentOS))
+445/tcp  open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: MYGROUP)
+631/tcp  open   ipp         CUPS 1.1
+3306/tcp open   mysql?
+MAC Address: 00:50:56:89:0E:EC (VMware)
+Device type: firewall|general purpose|WAP|proxy server|PBX|media device
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (93%), Cisco embedded (93%), Ruckus embedded (93%), Riverbed embedded (92%), FreeBSD 6.X (89%), Sony embedded (89%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/o:linux:linux_kernel:2.6.28 cpe:/h:ruckus:7363 cpe:/h:riverbed:steelhead_200 cpe:/h:cisco:uc320w cpe:/o:freebsd:freebsd:6.2 cpe:/o:linux:linux_kernel:2.4.20
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (93%), Linux 2.6.28 (93%), Linux 2.6.30 (93%), Linux 2.6.9 (CentOS 4.4) (93%), Linux 2.6.9 - 2.6.27 (93%), Ruckus 7363 WAP (93%), Riverbed Steelhead 200 proxy server (92%), Linux 2.6.18 (91%), Linux 2.6.9 (91%), Linux 2.6.11 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Unix
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 218.50 seconds
+Scanning 10.11.1.10...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:01 EST
+Nmap scan report for 10.11.1.10
+Host is up (0.045s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 6.0
+MAC Address: 00:50:56:93:6C:24 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|WAP
+Running (JUST GUESSING): Microsoft Windows XP|2003|2000 (93%), Apple embedded (86%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003 cpe:/h:apple:airport_extreme cpe:/o:microsoft:windows_2000::sp4
+Aggressive OS guesses: Microsoft Windows XP (93%), Microsoft Windows Server 2003 (90%), Microsoft Windows Server 2003 SP2 (89%), Microsoft Windows XP SP3 (89%), Apple AirPort Extreme WAP (86%), Microsoft Windows 2000 SP4 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.30 seconds
+Scanning 10.11.1.13...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:01 EST
+Nmap scan report for 10.11.1.13
+Host is up (0.17s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE        VERSION
+21/tcp   open  ftp            Microsoft ftpd
+80/tcp   open  http           Microsoft IIS httpd 5.1
+3389/tcp open  ms-wbt-server?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.70%I=7%D=3/6%Time=5C7FEF38%P=i686-pc-linux-gnu%r(Termi
+SF:nalServerCookie,B,"\x03\0\0\x0b\x06\xd0\0\0\x124\0");
+MAC Address: 00:50:56:89:63:E2 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows XP (96%)
+OS CPE: cpe:/o:microsoft:windows_xp
+Aggressive OS guesses: Microsoft Windows XP (96%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 83.58 seconds
+Scanning 10.11.1.14...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:03 EST
+Nmap scan report for 10.11.1.14
+Host is up (0.28s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        Microsoft ftpd
+80/tcp   open  http       Microsoft IIS httpd 5.1
+3389/tcp open  tcpwrapped
+MAC Address: 00:50:56:89:0B:07 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|WAP
+Running (JUST GUESSING): Microsoft Windows XP|2003 (95%), Apple embedded (86%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/h:apple:airport_extreme cpe:/o:microsoft:windows_server_2003
+Aggressive OS guesses: Microsoft Windows XP (95%), Apple AirPort Extreme WAP (86%), Microsoft Windows Server 2003 (86%), Microsoft Windows Server 2003 SP2 (86%), Microsoft Windows XP SP3 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 79.89 seconds
+Scanning 10.11.1.22...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:04 EST
+Nmap scan report for 10.11.1.22
+Host is up (0.040s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp?
+22/tcp    open  ssh         OpenSSH 3.1p1 (protocol 1.99)
+23/tcp    open  telnet?
+25/tcp    open  smtp?
+80/tcp    open  http        Apache httpd 1.3.23 ((Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2)
+111/tcp   open  rpcbind     2 (RPC #100000)
+139/tcp   open  netbios-ssn Samba smbd (workgroup: MYGROUP)
+199/tcp   open  smux        Linux SNMP multiplexer
+443/tcp   open  ssl/https   Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.
+995/tcp   open  ssl/pop3s?
+32768/tcp open  status      1 (RPC #100024)
+MAC Address: 00:50:56:89:35:29 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=21%CT=1%CU=37965%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF05F%P=i686-pc-linux-gnu)SEQ(SP=BF%GCD=1%ISR=D0%TI=Z%II=I%TS=7)SEQ(
+OS:II=I)OPS(O1=M529ST11NW0%O2=M529ST11NW0%O3=M529NNT11NW0%O4=M529ST11NW0%O5
+OS:=M529ST11NW0%O6=M529ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=
+OS:16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M529NNSNW0%CC=N%Q=)ECN(R=N)T1(R=Y%DF=Y%T
+OS:=40%S=O%A=S+%F=AS%RD=0%Q=)T1(R=N)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=FF%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=FF%IPL=164%UN=0%
+OS:RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=FF%CD=S)
+
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 196.39 seconds
+Scanning 10.11.1.24...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:07 EST
+Nmap scan report for 10.11.1.24
+Host is up (0.041s latency).
+Not shown: 992 closed ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 4.6p1 Debian 5build1 (protocol 2.0)
+80/tcp  open  http        Apache httpd 2.2.4 ((Ubuntu) PHP/5.2.3-1ubuntu6)
+110/tcp open  pop3        Dovecot pop3d
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: MSHOME)
+143/tcp open  imap        Dovecot imapd
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: MSHOME)
+993/tcp open  ssl/imap    Dovecot imapd
+995/tcp open  ssl/pop3    Dovecot pop3d
+MAC Address: 00:50:56:89:1F:B3 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=22%CT=1%CU=38111%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF07E%P=i686-pc-linux-gnu)SEQ(SP=D6%GCD=1%ISR=EF%TI=Z%II=I%TS=7)OPS(
+OS:O1=M529ST11NW5%O2=M529ST11NW5%O3=M529NNT11NW5%O4=M529ST11NW5%O5=M529ST11
+OS:NW5%O6=M529ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(
+OS:R=Y%DF=Y%T=40%W=16D0%O=M529NNSNW5%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUC
+OS:K=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.70 seconds
+Scanning 10.11.1.31...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:08 EST
+Nmap scan report for 10.11.1.31
+Host is up (0.044s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 6.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+1025/tcp open  msrpc         Microsoft Windows RPC
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2000 8.00.766; SP3a
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+MAC Address: 00:50:56:89:36:0B (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=80%CT=1%CU=41894%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF09D%P=i686-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10A%TI=I%II=I%SS=S%TS
+OS:=0)OPS(O1=M529NW0NNT00NNS%O2=M529NW0NNT00NNS%O3=M529NW0NNT00%O4=M529NW0N
+OS:NT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W
+OS:4=FAF0%W5=FAF0%W6=FAF0)ECN(R=Y%DF=N%T=80%W=FAF0%O=M529NW0NNS%CC=N%Q=)T1(
+OS:R=Y%DF=N%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=8
+OS:0%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=B0%UN=
+OS:0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2003
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.00 seconds
+Scanning 10.11.1.35...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:09 EST
+Nmap scan report for 10.11.1.35
+Host is up (0.12s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  open   ssh      OpenSSH 4.3 (protocol 2.0)
+443/tcp open   ssl/http Apache httpd 2.2.3 ((CentOS))
+631/tcp closed ipp
+MAC Address: 00:50:56:89:31:94 (VMware)
+Device type: general purpose|firewall|proxy server|PBX|WAP|remote management|print server
+Running (JUST GUESSING): Linux 2.6.X (94%), Cisco embedded (92%), Riverbed embedded (92%), Ruckus embedded (90%), FreeBSD 6.X (89%), Dell embedded (88%), HP embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.18 cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/h:riverbed:steelhead_200 cpe:/h:cisco:uc320w cpe:/h:ruckus:7363 cpe:/o:freebsd:freebsd:6.2 cpe:/h:dell:remote_access_card:5
+Aggressive OS guesses: Linux 2.6.18 (94%), Linux 2.6.9 (94%), Linux 2.6.9 - 2.6.27 (93%), Cisco SA520 firewall (Linux 2.6) (92%), Linux 2.6.11 (92%), Riverbed Steelhead 200 proxy server (92%), Linux 2.6.28 (90%), Linux 2.6.30 (90%), Linux 2.6.32 (90%), Linux 2.6.9 (CentOS 4.4) (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 120.66 seconds
+Scanning 10.11.1.39...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:11 EST
+Nmap scan report for 10.11.1.39
+Host is up (0.045s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+80/tcp   open  http    nginx 1.6.3
+3306/tcp open  mysql   MariaDB (unauthorized)
+MAC Address: 00:50:56:93:08:67 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (89%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:2.6
+Aggressive OS guesses: Linux 3.10 - 3.12 (89%), Linux 4.4 (89%), Linux 4.9 (89%), Linux 2.6.18 - 2.6.22 (86%), Linux 3.11 - 4.1 (85%), Linux 3.2 - 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.99 seconds
+Scanning 10.11.1.44...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:11 EST
+Nmap scan report for 10.11.1.44
+Host is up (0.041s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 5.3p1 Debian 3ubuntu7 (Ubuntu Linux; protocol 2.0)
+8000/tcp open  ssl/http Rocket httpd 1.2.6 (Python 2.6.5)
+MAC Address: 00:50:56:89:7E:56 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=22%CT=1%CU=30263%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF16B%P=i686-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%II=I%TS=8)SE
+OS:Q(SP=106%GCD=1%ISR=10C%TI=Z%TS=B)SEQ(TS=9)OPS(O1=M529ST11NW6%O2=M529ST11
+OS:NW6%O3=M529NNT11NW6%O4=M529ST11NW6%O5=M529ST11NW6%O6=M529ST11)WIN(W1=16A
+OS:0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M52
+OS:9NNSNW6%CC=Y%Q=)ECN(R=N)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T1(R=N)T2
+OS:(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T5(R=N)
+OS:T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%
+OS:RUD=G)U1(R=N)IE(R=Y%DFI=N%T=40%CD=S)IE(R=N)
+
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 60.57 seconds
+Scanning 10.11.1.49...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.90 seconds
+Scanning 10.11.1.50...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.83 seconds
+Scanning 10.11.1.71...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.96 seconds
+Scanning 10.11.1.72...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.97 seconds
+Scanning 10.11.1.73...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.89 seconds
+Scanning 10.11.1.75...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.94 seconds
+Scanning 10.11.1.115...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.90 seconds
+Scanning 10.11.1.116...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.87 seconds
+Scanning 10.11.1.125...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.84 seconds
+Scanning 10.11.1.128...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:12 EST
+Nmap scan report for 10.11.1.128
+Host is up (0.065s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          Microsoft ftpd 5.0
+25/tcp   open  smtp         Microsoft ESMTP 5.0.2195.6713
+80/tcp   open  http         Microsoft IIS httpd 5.0
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp  open  https?
+445/tcp  open  microsoft-ds Microsoft Windows 2000 microsoft-ds
+1025/tcp open  msrpc        Microsoft Windows RPC
+1026/tcp open  msrpc        Microsoft Windows RPC
+1029/tcp open  msrpc        Microsoft Windows RPC
+3372/tcp open  msdtc        Microsoft Distributed Transaction Coordinator
+5800/tcp open  vnc-http     TightVNC
+5900/tcp open  vnc          VNC (protocol 3.8)
+MAC Address: 00:50:56:93:23:CD (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=21%CT=1%CU=43519%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF1F9%P=i686-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10A%TI=I%II=I%SS=S%TS
+OS:=0)SEQ(SP=106%GCD=1%ISR=10A%TI=I%TS=0)OPS(O1=M529NW0NNT00NNS%O2=M529NW0N
+OS:NT00NNS%O3=M529NW0NNT00%O4=M529NW0NNT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT
+OS:00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)ECN(R=Y%DF=Y%T
+OS:=80%W=FAF0%O=M529NW0NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T
+OS:2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N
+OS:)T7(R=N)U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)I
+OS:E(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 1 hop
+Service Info: Host: dj.acme.local; OSs: Windows, Windows 2000; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_2000
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 114.83 seconds
+Scanning 10.11.1.133...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:14 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.84 seconds
+Scanning 10.11.1.136...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:14 EST
+Nmap scan report for 10.11.1.136
+Host is up (0.042s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 4.3p2 Debian 9 (protocol 2.0)
+113/tcp open  ident
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: LOCAL)
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: LOCAL)
+MAC Address: 00:50:56:93:1B:7D (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=22%CT=1%CU=31075%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF21A%P=i686-pc-linux-gnu)SEQ(SP=CB%GCD=1%ISR=CC%TI=Z%II=I%TS=8)OPS(
+OS:O1=M529ST11NW6%O2=M529ST11NW6%O3=M529NNT11NW6%O4=M529ST11NW6%O5=M529ST11
+OS:NW6%O6=M529ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(
+OS:R=Y%DF=Y%T=40%W=16D0%O=M529NNSNW6%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUC
+OS:K=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 29.60 seconds
+Scanning 10.11.1.141...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:15 EST
+Nmap scan report for 10.11.1.141
+Host is up (0.041s latency).
+Not shown: 997 closed ports
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 4.0 (protocol 2.0)
+111/tcp   open  rpcbind 2 (RPC #100000)
+10000/tcp open  http    MiniServ 0.01 (Webmin httpd)
+MAC Address: 00:50:56:89:37:5A (VMware)
+Device type: firewall|general purpose|proxy server|WAP|PBX|media device
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (93%), Cisco embedded (93%), Riverbed embedded (93%), Ruckus embedded (93%), FreeBSD 6.X (89%), Sony embedded (89%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/o:linux:linux_kernel:2.6.9 cpe:/h:riverbed:steelhead_200 cpe:/h:ruckus:7363 cpe:/h:cisco:uc320w cpe:/o:freebsd:freebsd:6.2 cpe:/o:linux:linux_kernel:2.4.20
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (93%), Linux 2.6.9 (CentOS 4.4) (93%), Linux 2.6.9 - 2.6.27 (93%), Riverbed Steelhead 200 proxy server (93%), Ruckus 7363 WAP (93%), Linux 2.6.9 (93%), Linux 2.6.28 (92%), Linux 2.6.30 (92%), Linux 2.6.18 (91%), Linux 2.6.11 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 46.59 seconds
+Scanning 10.11.1.145...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:16 EST
+Nmap scan report for 10.11.1.145
+Host is up (0.044s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE            VERSION
+135/tcp  open  msrpc              Microsoft Windows RPC
+139/tcp  open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds       Microsoft Windows Server 2008 R2 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp open  ssl/ms-wbt-server?
+8080/tcp open  http               Apache Tomcat/Coyote JSP engine 1.1
+MAC Address: 00:50:56:89:58:70 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 2008|7
+OS CPE: cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+OS details: Microsoft Windows 7 or Windows Server 2008 R2
+Network Distance: 1 hop
+Service Info: Host: HELPDESK; OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2008:r2
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 38.59 seconds
+Scanning 10.11.1.146...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:16 EST
+Nmap scan report for 10.11.1.146
+Host is up (0.044s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     ProFTPD 1.3.3a
+22/tcp open  ssh     OpenSSH 5.5p1 Debian 6 (protocol 2.0)
+MAC Address: 00:50:56:89:22:66 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/6%OT=21%CT=1%CU=37105%PV=Y%DS=1%DC=D%G=Y%M=005056%TM
+OS:=5C7FF287%P=i686-pc-linux-gnu)SEQ(SP=CA%GCD=1%ISR=CD%TI=Z%II=I%TS=8)OPS(
+OS:O1=M529ST11NW5%O2=M529ST11NW5%O3=M529NNT11NW5%O4=M529ST11NW5%O5=M529ST11
+OS:NW5%O6=M529ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(
+OS:R=Y%DF=Y%T=40%W=16D0%O=M529NNSNW5%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUC
+OS:K=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.40 seconds
+Scanning 10.11.1.202...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Nmap scan report for 10.11.1.202
+Host is up (0.0057s latency).
+All 1000 scanned ports on 10.11.1.202 are filtered
+MAC Address: 00:50:56:89:22:DA (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.39 seconds
+Scanning 10.11.1.209...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.66 seconds
+Scanning 10.11.1.217...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.58 seconds
+Scanning 10.11.1.218...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.58 seconds
+Scanning 10.11.1.219...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.62 seconds
+Scanning 10.11.1.220...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.63 seconds
+Scanning 10.11.1.221...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.69 seconds
+Scanning 10.11.1.223...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.68 seconds
+Scanning 10.11.1.226...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.60 seconds
+Scanning 10.11.1.227...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.62 seconds
+Scanning 10.11.1.229...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.66 seconds
+Scanning 10.11.1.230...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.66 seconds
+Scanning 10.11.1.234...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.61 seconds
+Scanning 10.11.1.237...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.64 seconds
+Scanning 10.11.1.238...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:17 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.59 seconds
+Scanning 10.11.1.247...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:18 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.61 seconds
+Scanning 10.11.1.251...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:18 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.62 seconds
+Scanning 10.11.1.252...
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 11:18 EST
+Nmap scan report for 10.11.1.252
+Host is up (0.044s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE    VERSION
+8000/tcp open  http       Apache httpd 2.2.3 ((CentOS))
+8888/tcp open  http-proxy Squid http proxy 3.3.8
+MAC Address: 00:50:56:89:3D:BD (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall|general purpose|WAP|proxy server|PBX
+Running (JUST GUESSING): Linux 2.6.X (89%), Cisco embedded (89%), ZoneAlarm embedded (89%), Ruckus embedded (89%), Riverbed embedded (87%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/o:linux:linux_kernel:2.6.28 cpe:/h:zonealarm:z100g cpe:/h:ruckus:7363 cpe:/h:riverbed:steelhead_200 cpe:/h:cisco:uc320w
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (89%), Linux 2.6.28 (89%), Linux 2.6.9 - 2.6.27 (89%), ZoneAlarm Z100G WAP (89%), Ruckus 7363 WAP (89%), Linux 2.6.9 (89%), Linux 2.6.30 (87%), Linux 2.6.9 (CentOS 4.4) (87%), Riverbed Steelhead 200 proxy server (87%), Linux 2.6.18 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.45 seconds

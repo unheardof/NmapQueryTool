@@ -1,0 +1,105 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-21 09:28 EDT
+Nmap scan report for 192.168.66.53
+Host is up (0.072s latency).
+Not shown: 996 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+25/tcp open  smtp    Postfix smtpd
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:50:56:84:D7:AA (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/21%OT=21%CT=1%CU=42934%PV=Y%DS=1%DC=D%G=Y%M=005056%T
+OS:M=5C939274%P=i686-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%II=I%TS=8)S
+OS:EQ(SP=107%GCD=1%ISR=10C%TI=Z%TS=8)OPS(O1=M529ST11NW7%O2=M529ST11NW7%O3=M
+OS:529NNT11NW7%O4=M529ST11NW7%O5=M529ST11NW7%O6=M529ST11)WIN(W1=7120%W2=712
+OS:0%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M529NNSNW7%
+OS:CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: Host:  textian; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.66.161
+Host is up (0.072s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+25/tcp   open  smtp    Postfix smtpd
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+2049/tcp open  nfs_acl 3 (RPC #100227)
+3306/tcp open  mysql   MySQL (unauthorized)
+MAC Address: 00:50:56:84:E3:30 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/21%OT=22%CT=1%CU=31784%PV=Y%DS=1%DC=D%G=Y%M=005056%T
+OS:M=5C939274%P=i686-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%II=I%TS=A)S
+OS:EQ(SP=107%GCD=1%ISR=10C%TI=Z%TS=A)OPS(O1=M529ST11NW7%O2=M529ST11NW7%O3=M
+OS:529NNT11NW7%O4=M529ST11NW7%O5=M529ST11NW7%O6=M529ST11)WIN(W1=7120%W2=712
+OS:0%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M529NNSNW7%
+OS:CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: Host:  locutus; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.66.55
+Host is up (0.071s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+MAC Address: 00:50:56:84:42:DE (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=3/21%OT=22%CT=1%CU=31226%PV=Y%DS=1%DC=D%G=Y%M=005056%T
+OS:M=5C939274%P=i686-pc-linux-gnu)SEQ(SP=FB%GCD=1%ISR=10E%TI=Z%II=I%TS=8)SE
+OS:Q(SP=FB%GCD=1%ISR=10E%TI=Z%TS=8)OPS(O1=M529ST11NW7%O2=M529ST11NW7%O3=M52
+OS:9NNT11NW7%O4=M529ST11NW7%O5=M529ST11NW7%O6=M529ST11)WIN(W1=7120%W2=7120%
+OS:W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M529NNSNW7%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y
+OS:%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%I
+OS:PL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.66.67
+Host is up (0.099s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE VERSION
+135/tcp  open  msrpc   Microsoft Windows RPC
+3306/tcp open  mysql   MariaDB (unauthorized)
+8080/tcp open  http    Apache httpd 2.4.17 ((Win32) OpenSSL/1.0.2d PHP/5.5.30)
+MAC Address: 00:50:56:84:BA:12 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 2008|7
+OS CPE: cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+OS details: Microsoft Windows 7 or Windows Server 2008 R2
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.66.112
+Host is up (0.10s latency).
+Not shown: 995 filtered ports
+PORT      STATE SERVICE VERSION
+135/tcp   open  msrpc   Microsoft Windows RPC
+554/tcp   open  rtsp?
+2869/tcp  open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5357/tcp  open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+10243/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 00:50:56:84:FD:87 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 2008|7
+OS CPE: cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+OS details: Microsoft Windows 7 or Windows Server 2008 R2
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 5 IP addresses (5 hosts up) scanned in 231.94 seconds

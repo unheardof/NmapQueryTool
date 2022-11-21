@@ -1,0 +1,80 @@
+Nmap scan report for 10.11.11.1
+Host is up (0.00088s latency).
+All 1000 scanned ports on 10.11.11.1 are filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 10.11.11.21
+Host is up (0.0018s latency).
+Not shown: 989 filtered ports
+PORT      STATE SERVICE      VERSION
+80/tcp    open  http         Microsoft IIS httpd 8.5
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49156/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  msrpc        Microsoft Windows RPC
+49158/tcp open  msrpc        Microsoft Windows RPC
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 2012
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2
+OS details: Microsoft Windows Server 2012 or Windows Server 2012 R2
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.11.11.22
+Host is up (0.0018s latency).
+Not shown: 989 closed ports
+PORT      STATE    SERVICE      VERSION
+80/tcp    open     http         Microsoft IIS httpd 8.5
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+49152/tcp open     msrpc        Microsoft Windows RPC
+49153/tcp open     msrpc        Microsoft Windows RPC
+49154/tcp open     msrpc        Microsoft Windows RPC
+49155/tcp open     msrpc        Microsoft Windows RPC
+49156/tcp open     msrpc        Microsoft Windows RPC
+49157/tcp open     msrpc        Microsoft Windows RPC
+49158/tcp open     msrpc        Microsoft Windows RPC
+Device type: general purpose
+Running: Microsoft Windows 2012|7|8.1
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_7:::ultimate cpe:/o:microsoft:windows_8.1
+OS details: Microsoft Windows Server 2012 R2 Update 1, Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1
+Network Distance: 7 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.11.11.23
+Host is up (0.0015s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.8, Linux 3.16 - 4.6, Linux 3.2 - 4.8, Linux 4.4
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.11.11.24
+Host is up (0.0014s latency).
+Not shown: 997 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     (protocol 1.99)
+53/tcp open  domain
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port22-TCP:V=7.60%I=7%D=2/16%Time=5C681769%P=x86_64-unknown-linux-gnu%r
+SF:(NULL,29,"SSH-1\.99-OpenSSH_6\.6\.1p1\x20Ubuntu-2ubuntu2\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.8, Linux 3.16 - 4.6, Linux 3.2 - 4.8, Linux 4.4
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (5 hosts up) scanned in 281.46 seconds

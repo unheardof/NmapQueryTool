@@ -1,0 +1,116 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:08 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Initiating ARP Ping Scan at 16:08
+Scanning 10.11.1.8 [1 port]
+Completed ARP Ping Scan at 16:08, 0.44s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.8 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 0.79 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:08 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Initiating ARP Ping Scan at 16:08
+Scanning 10.11.1.13 [1 port]
+Completed ARP Ping Scan at 16:08, 0.45s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.13 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 0.79 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:08 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Initiating ARP Ping Scan at 16:08
+Scanning 10.11.1.14 [1 port]
+Completed ARP Ping Scan at 16:08, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 16:08
+Completed Parallel DNS resolution of 1 host. at 16:08, 0.02s elapsed
+Initiating SYN Stealth Scan at 16:08
+Scanning 10.11.1.14 [1 port]
+Discovered open port 21/tcp on 10.11.1.14
+Completed SYN Stealth Scan at 16:08, 0.09s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.14.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 9.70s elapsed
+Nmap scan report for 10.11.1.14
+Host is up (0.027s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 01-17-07  06:42PM       <DIR>          AdminScripts
+| 01-17-07  06:43PM       <DIR>          ftproot
+| 01-17-07  06:43PM       <DIR>          iissamples
+| 02-28-19  10:38PM       <DIR>          Scripts
+|_03-06-19  08:37PM       <DIR>          wwwroot
+MAC Address: 00:50:56:89:0B:07 (VMware)
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 10.51 seconds
+           Raw packets sent: 3 (100B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:08 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Initiating ARP Ping Scan at 16:08
+Scanning 10.11.1.22 [1 port]
+Completed ARP Ping Scan at 16:08, 0.43s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.22 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 0.75 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:08 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Initiating ARP Ping Scan at 16:08
+Scanning 10.11.1.128 [1 port]
+Completed ARP Ping Scan at 16:08, 0.44s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.128 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 0.78 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:08 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Initiating ARP Ping Scan at 16:08
+Scanning 10.11.1.146 [1 port]
+Completed ARP Ping Scan at 16:08, 0.45s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.146 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:08
+Completed NSE at 16:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 0.80 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)

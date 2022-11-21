@@ -43,3 +43,11 @@ Usage: python nmap-query.py [-h] [-p PORTS] [-a IPS] [-os OS] [-d DEVICE_TYPE] [
 
 [-q | --query-mode]: enter the interactive query mode
 ```
+
+# Locate script install location
+
+1. `pip3 show nmap-query-tool`; will show the install directory of the package
+1. `cd <INSTALL DIRECTORY>/NmapQueryTool`
+1. `python3 nmap_query_tool.py`
+
+You can also setup an alias for running the script: `alias nmap-query="python3 ${pwd}/nmap_query.py"`

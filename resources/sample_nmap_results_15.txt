@@ -1,0 +1,707 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:35 EST
+Nmap scan report for 10.11.1.5
+Host is up (0.055s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows XP microsoft-ds
+1025/tcp open  msrpc        Microsoft Windows RPC
+3389/tcp open  tcpwrapped
+MAC Address: 00:50:56:89:65:70 (VMware)
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.18 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:36 EST
+Nmap scan report for 10.11.1.7
+Host is up (0.037s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+MAC Address: 00:50:56:89:3C:9D (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.58 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:36 EST
+Nmap scan report for 10.11.1.8
+Host is up (0.080s latency).
+Not shown: 990 filtered ports
+PORT     STATE  SERVICE     VERSION
+21/tcp   open   ftp         vsftpd 2.0.1
+22/tcp   open   ssh         OpenSSH 3.9p1 (protocol 1.99)
+25/tcp   closed smtp
+80/tcp   open   http        Apache httpd 2.0.52 ((CentOS))
+111/tcp  open   rpcbind     2 (RPC #100000)
+139/tcp  open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: MYGROUP)
+443/tcp  open   ssl/http    Apache httpd 2.0.52 ((CentOS))
+445/tcp  open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: MYGROUP)
+631/tcp  open   ipp         CUPS 1.1
+3306/tcp open   mysql?
+MAC Address: 00:50:56:89:0E:EC (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 182.29 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:39 EST
+Nmap scan report for 10.11.1.10
+Host is up (0.043s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 6.0
+MAC Address: 00:50:56:93:6C:24 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 17.12 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:39 EST
+Nmap scan report for 10.11.1.13
+Host is up (0.042s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        Microsoft ftpd
+80/tcp   open  http       Microsoft IIS httpd 5.1
+3389/tcp open  tcpwrapped
+MAC Address: 00:50:56:89:63:E2 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.04 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:40 EST
+Nmap scan report for 10.11.1.14
+Host is up (0.16s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE        VERSION
+21/tcp   open  ftp            Microsoft ftpd
+80/tcp   open  http           Microsoft IIS httpd 5.1
+3389/tcp open  ms-wbt-server?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.70%I=7%D=3/7%Time=5C811170%P=i686-pc-linux-gnu%r(Termi
+SF:nalServerCookie,B,"\x03\0\0\x0b\x06\xd0\0\0\x124\0");
+MAC Address: 00:50:56:89:0B:07 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 81.61 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:41 EST
+Nmap scan report for 10.11.1.22
+Host is up (0.039s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp?
+22/tcp    open  ssh         OpenSSH 3.1p1 (protocol 1.99)
+23/tcp    open  telnet?
+25/tcp    open  smtp?
+80/tcp    open  http        Apache httpd 1.3.23 ((Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2)
+111/tcp   open  rpcbind     2 (RPC #100000)
+139/tcp   open  netbios-ssn Samba smbd (workgroup: AMYGROUP)
+199/tcp   open  smux        Linux SNMP multiplexer
+443/tcp   open  ssl/https   Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.
+995/tcp   open  ssl/pop3s?
+32768/tcp open  status      1 (RPC #100024)
+MAC Address: 00:50:56:89:35:29 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 170.67 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:44 EST
+Nmap scan report for 10.11.1.24
+Host is up (0.042s latency).
+Not shown: 992 closed ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 4.6p1 Debian 5build1 (protocol 2.0)
+80/tcp  open  http        Apache httpd 2.2.4 ((Ubuntu) PHP/5.2.3-1ubuntu6)
+110/tcp open  pop3        Dovecot pop3d
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: MSHOME)
+143/tcp open  imap        Dovecot imapd
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: MSHOME)
+993/tcp open  ssl/imap    Dovecot imapd
+995/tcp open  ssl/pop3    Dovecot pop3d
+MAC Address: 00:50:56:89:1F:B3 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 18.56 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:44 EST
+Nmap scan report for 10.11.1.31
+Host is up (0.037s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 6.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+1025/tcp open  msrpc         Microsoft Windows RPC
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2000 8.00.766; SP3a
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+MAC Address: 00:50:56:89:36:0B (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2003
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 18.95 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:45 EST
+Nmap scan report for 10.11.1.35
+Host is up (0.15s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  open   ssh      OpenSSH 4.3 (protocol 2.0)
+443/tcp open   ssl/http Apache httpd 2.2.3 ((CentOS))
+631/tcp closed ipp
+MAC Address: 00:50:56:89:31:94 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 38.36 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:45 EST
+Nmap scan report for 10.11.1.39
+Host is up (0.052s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 6.6.1 (protocol 2.0)
+80/tcp   open  http    nginx 1.6.3
+3306/tcp open  mysql   MariaDB (unauthorized)
+MAC Address: 00:50:56:93:08:67 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 17.24 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:45 EST
+Nmap scan report for 10.11.1.44
+Host is up (0.040s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 5.3p1 Debian 3ubuntu7 (Ubuntu Linux; protocol 2.0)
+8000/tcp open  ssl/http Rocket httpd 1.2.6 (Python 2.6.5)
+MAC Address: 00:50:56:89:7E:56 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 34.39 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:46 EST
+Nmap scan report for 10.11.1.49
+Host is up (0.045s latency).
+Not shown: 996 filtered ports
+PORT      STATE SERVICE     VERSION
+80/tcp    open  http        Microsoft IIS httpd 8.5
+135/tcp   open  msrpc       Microsoft Windows RPC
+139/tcp   open  netbios-ssn Microsoft Windows netbios-ssn
+49155/tcp open  msrpc       Microsoft Windows RPC
+MAC Address: 00:50:56:89:13:B1 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 63.84 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:47 EST
+Nmap scan report for 10.11.1.50
+Host is up (0.057s latency).
+Not shown: 996 filtered ports
+PORT      STATE SERVICE     VERSION
+80/tcp    open  http        Microsoft IIS httpd 8.5
+135/tcp   open  msrpc       Microsoft Windows RPC
+139/tcp   open  netbios-ssn Microsoft Windows netbios-ssn
+49155/tcp open  msrpc       Microsoft Windows RPC
+MAC Address: 00:50:56:89:1A:52 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 69.22 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:48 EST
+Nmap scan report for 10.11.1.71
+Host is up (0.049s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http?
+MAC Address: 00:50:56:93:29:72 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.46 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:49 EST
+Nmap scan report for 10.11.1.72
+Host is up (0.040s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 5.8p1 Debian 7ubuntu1 (Ubuntu Linux; protocol 2.0)
+25/tcp   open  smtp    JAMES smtpd 2.3.2
+80/tcp   open  http    Apache httpd 2.2.20 ((Ubuntu))
+110/tcp  open  pop3    JAMES pop3d 2.3.2
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+119/tcp  open  nntp    JAMES nntpd (posting ok)
+2049/tcp open  nfs_acl 2-3 (RPC #100227)
+MAC Address: 00:50:56:89:0E:98 (VMware)
+Service Info: Host: beta; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.70 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:49 EST
+Nmap scan report for 10.11.1.73
+Host is up (0.041s latency).
+Not shown: 980 filtered ports
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+554/tcp   open  rtsp?
+1100/tcp  open  rmiregistry   Java RMI
+2869/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3306/tcp  open  mysql         MySQL (unauthorized; French)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5357/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp  open  http-proxy    sslstrip
+5900/tcp  open  vnc           VNC (protocol 3.8)
+8080/tcp  open  http          Apache httpd 2.4.9 ((Win32) PHP/5.5.12)
+10243/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49157/tcp open  rmiregistry   Java RMI
+49159/tcp open  rmiregistry   Java RMI
+MAC Address: 00:50:56:93:63:A8 (VMware)
+Service Info: Host: GAMMA; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 139.68 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 07:51 EST
+Nmap scan report for 10.11.1.75
+Host is up (0.051s latency).
+Not shown: 986 filtered ports
+PORT      STATE SERVICE      VERSION
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+554/tcp   open  rtsp?
+2869/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp  open  tcpwrapped
+5357/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+10243/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49156/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  msrpc        Microsoft Windows RPC
+MAC Address: 00:50:56:93:1F:73 (VMware)
+Service Info: Host: BRUCE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32892.66 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:00 EST
+Nmap scan report for 10.11.1.115
+Host is up (0.030s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp         vsftpd 1.1.3
+22/tcp    open  ssh         OpenSSH 3.5p1 (protocol 1.99)
+25/tcp    open  smtp?
+80/tcp    open  http        Apache httpd 2.0.40 ((Red Hat Linux))
+111/tcp   open  rpcbind     2 (RPC #100000)
+139/tcp   open  netbios-ssn Samba smbd (workgroup: MYGROUP)
+143/tcp   open  imap        UW imapd 2001.315rh
+199/tcp   open  smux        Linux SNMP multiplexer
+443/tcp   open  ssl/http    Apache httpd 2.0.40 ((Red Hat Linux))
+3306/tcp  open  mysql       MySQL (unauthorized)
+32768/tcp open  status      1 (RPC #100024)
+MAC Address: 00:50:56:89:64:77 (VMware)
+Service Info: Host: tophat.acme.local; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 177.80 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:03 EST
+Nmap scan report for 10.11.1.116
+Host is up (0.028s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp?
+22/tcp   open  ssh        OpenSSH 5.8p2_hpn13v11 (FreeBSD 20110503; protocol 2.0)
+80/tcp   open  http       Apache httpd 2.4.6 ((FreeBSD) PHP/5.4.23)
+110/tcp  open  tcpwrapped
+143/tcp  open  tcpwrapped
+3306/tcp open  mysql      MySQL (unauthorized)
+MAC Address: 00:50:56:89:14:91 (VMware)
+Service Info: OS: FreeBSD; CPE: cpe:/o:freebsd:freebsd
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 165.27 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:05 EST
+Nmap scan report for 10.11.1.125
+Host is up (0.035s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     Acritum Femitter Server ftpd
+MAC Address: 00:50:56:89:28:B3 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 10.15 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:05 EST
+Nmap scan report for 10.11.1.128
+Host is up (0.034s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          Microsoft ftpd 5.0
+25/tcp   open  smtp         Microsoft ESMTP 5.0.2195.6713
+80/tcp   open  http         Microsoft IIS httpd 5.0
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp  open  https?
+445/tcp  open  microsoft-ds Microsoft Windows 2000 microsoft-ds
+1025/tcp open  msrpc        Microsoft Windows RPC
+1026/tcp open  msrpc        Microsoft Windows RPC
+1029/tcp open  msrpc        Microsoft Windows RPC
+3372/tcp open  msdtc        Microsoft Distributed Transaction Coordinator
+5800/tcp open  vnc-http     TightVNC
+5900/tcp open  vnc          VNC (protocol 3.8)
+MAC Address: 00:50:56:93:23:CD (VMware)
+Service Info: Host: dj.acme.local; OSs: Windows, Windows 2000; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_2000
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 63.03 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:07 EST
+Nmap scan report for 10.11.1.133
+Host is up (0.079s latency).
+Not shown: 611 filtered ports, 388 closed ports
+PORT   STATE SERVICE    VERSION
+80/tcp open  tcpwrapped
+MAC Address: 00:50:56:89:1B:56 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 28.91 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:07 EST
+Nmap scan report for 10.11.1.136
+Host is up (0.047s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 4.3p2 Debian 9 (protocol 2.0)
+113/tcp open  ident
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: LOCAL)
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: LOCAL)
+MAC Address: 00:50:56:93:1B:7D (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 16.78 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:07 EST
+Nmap scan report for 10.11.1.141
+Host is up (0.041s latency).
+Not shown: 997 closed ports
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 4.0 (protocol 2.0)
+111/tcp   open  rpcbind 2 (RPC #100000)
+10000/tcp open  http    MiniServ 0.01 (Webmin httpd)
+MAC Address: 00:50:56:89:37:5A (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 40.57 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:08 EST
+Nmap scan report for 10.11.1.145
+Host is up (0.034s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE            VERSION
+135/tcp  open  msrpc              Microsoft Windows RPC
+139/tcp  open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds       Microsoft Windows Server 2008 R2 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp open  ssl/ms-wbt-server?
+8080/tcp open  http               Apache Tomcat/Coyote JSP engine 1.1
+MAC Address: 00:50:56:89:58:70 (VMware)
+Service Info: Host: HELPDESK; OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2008:r2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.24 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:08 EST
+Nmap scan report for 10.11.1.146
+Host is up (0.036s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     ProFTPD 1.3.3a
+22/tcp open  ssh     OpenSSH 5.5p1 Debian 6 (protocol 2.0)
+MAC Address: 00:50:56:89:22:66 (VMware)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 5.63 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:08 EST
+Nmap done: 1 IP address (0 hosts up) scanned in 4.02 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:09 EST
+Stats: 0:00:14 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 46.76% done; ETC: 17:09 (0:00:11 remaining)
+Stats: 0:00:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 49.81% done; ETC: 17:09 (0:00:12 remaining)
+Nmap scan report for 10.11.1.209
+Host is up (0.12s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     SunSSH 1.1.5 (protocol 2.0)
+80/tcp   open  http    Apache httpd 1.3.41 ((Unix) mod_perl/1.31)
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+8009/tcp open  ajp13   Apache Jserv (Protocol v1.3)
+8080/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
+MAC Address: 00:50:56:89:5A:1B (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 73.49 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:10 EST
+Nmap scan report for 10.11.1.217
+Host is up (0.041s latency).
+Not shown: 989 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 4.3 (protocol 2.0)
+25/tcp   open  smtp?
+80/tcp   open  http       Apache httpd 2.2.3
+110/tcp  open  pop3?
+111/tcp  open  rpcbind    2 (RPC #100000)
+143/tcp  open  imap?
+443/tcp  open  ssl/http   Apache httpd 2.2.3 ((CentOS))
+993/tcp  open  imaps?
+995/tcp  open  pop3s?
+3306/tcp open  mysql?
+4445/tcp open  upnotifyp?
+MAC Address: 00:50:56:89:0D:2F (VMware)
+Service Info: Host: 127.0.0.1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 179.25 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:13 EST
+Nmap scan report for 10.11.1.218
+Host is up (0.031s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE      VERSION
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: THINC)
+MAC Address: 00:50:56:93:71:79 (VMware)
+Service Info: Host: OBSERVER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.98 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:13 EST
+Nmap scan report for 10.11.1.219
+Host is up (0.035s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd
+MAC Address: 00:50:56:89:31:CB (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 16.53 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:13 EST
+Nmap scan report for 10.11.1.220
+Host is up (0.035s latency).
+Not shown: 980 closed ports
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           FileZilla ftpd 0.9.34 beta
+53/tcp    open  domain        Microsoft DNS 6.1.7601 (1DB15D39) (Windows Server 2008 R2 SP1)
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2013-12-28 07:37:24Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: thinc.local, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: THINC)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: thinc.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49157/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc         Microsoft Windows RPC
+49165/tcp open  msrpc         Microsoft Windows RPC
+MAC Address: 00:50:56:93:26:78 (VMware)
+Service Info: Host: MASTER; OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2008:r2:sp1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 65.85 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:14 EST
+Nmap scan report for 10.11.1.221
+Host is up (0.050s latency).
+Not shown: 995 filtered ports
+PORT      STATE SERVICE            VERSION
+53/tcp    open  domain             Microsoft DNS 6.0.6001 (17714650) (Windows Server 2008 SP1)
+135/tcp   open  msrpc              Microsoft Windows RPC
+3389/tcp  open  ssl/ms-wbt-server?
+5357/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49159/tcp open  msrpc              Microsoft Windows RPC
+MAC Address: 00:50:56:93:67:49 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008::sp1, cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 85.32 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:16 EST
+Nmap scan report for 10.11.1.223
+Host is up (0.034s latency).
+Not shown: 987 closed ports
+PORT      STATE SERVICE            VERSION
+80/tcp    open  http               Apache httpd 2.2.14 (DAV/2 mod_ssl/2.2.14 OpenSSL/0.9.8l mod_autoindex_color PHP/5.3.1 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1)
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http           Apache httpd 2.2.14 (DAV/2 mod_ssl/2.2.14 OpenSSL/0.9.8l mod_autoindex_color PHP/5.3.1 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1)
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 microsoft-ds (workgroup: WORKGROUP)
+3306/tcp  open  mysql?
+3389/tcp  open  ssl/ms-wbt-server?
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+MAC Address: 00:50:56:89:32:12 (VMware)
+Service Info: Hosts: localhost, JEFF; OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2008:r2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 160.43 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:19 EST
+Nmap scan report for 10.11.1.226
+Host is up (0.032s latency).
+Not shown: 998 filtered ports
+PORT     STATE  SERVICE       VERSION
+21/tcp   open   ftp           GuildFTPd
+3389/tcp closed ms-wbt-server
+MAC Address: 00:50:56:89:13:B5 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.77 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:19 EST
+Nmap scan report for 10.11.1.227
+Host is up (0.056s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          Microsoft ftpd 5.0
+25/tcp   open  smtp         Microsoft ESMTP 5.0.2195.5329
+80/tcp   open  http         Microsoft IIS httpd 5.0
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp  open  https?
+445/tcp  open  microsoft-ds Microsoft Windows 2000 microsoft-ds
+1025/tcp open  msrpc        Microsoft Windows RPC
+1026/tcp open  msrpc        Microsoft Windows RPC
+1028/tcp open  msrpc        Microsoft Windows RPC
+3372/tcp open  msdtc        Microsoft Distributed Transaction Coordinator
+5800/tcp open  vnc-http     RealVNC 4.0 (resolution: 400x250; VNC TCP port: 5900)
+5900/tcp open  vnc          VNC (protocol 3.8)
+MAC Address: 00:50:56:89:61:C6 (VMware)
+Service Info: Host: jd.acme.local; OSs: Windows, Windows 2000; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_2000
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 67.19 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:20 EST
+Nmap scan report for 10.11.1.229
+Host is up (0.033s latency).
+Not shown: 988 filtered ports
+PORT     STATE  SERVICE       VERSION
+21/tcp   open   tcpwrapped
+23/tcp   closed telnet
+25/tcp   open   smtp          hMailServer smtpd
+80/tcp   open   http          Microsoft IIS httpd 6.0
+110/tcp  open   pop3          hMailServer pop3d
+135/tcp  open   msrpc         Microsoft Windows RPC
+139/tcp  open   netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  open   imap          hMailServer imapd
+443/tcp  closed https
+1025/tcp open   msrpc         Microsoft Windows RPC
+2869/tcp closed icslap
+3389/tcp open   ms-wbt-server Microsoft Terminal Service
+MAC Address: 00:50:56:93:38:24 (VMware)
+Service Info: Host: MAIL; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.37 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:20 EST
+Nmap scan report for 10.11.1.230
+Host is up (0.032s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE      VERSION
+80/tcp    open  http         GoAhead WebServer
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  tcpwrapped
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49156/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  msrpc        Microsoft Windows RPC
+MAC Address: 00:50:56:89:76:DF (VMware)
+Service Info: Host: KEVIN; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 72.94 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:21 EST
+Nmap scan report for 10.11.1.234
+Host is up (0.035s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.3p1 Debian 3ubuntu3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.2.14 ((Ubuntu))
+MAC Address: 00:50:56:89:1A:F5 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.25 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:22 EST
+Nmap scan report for 10.11.1.237
+Host is up (0.051s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 6.0p1 Debian 4 (protocol 2.0)
+80/tcp  open  http     Apache httpd 2.2.22 ((Debian))
+111/tcp open  rpcbind  2-4 (RPC #100000)
+443/tcp open  ssl/http Apache httpd 2.2.22 ((Debian))
+MAC Address: 00:50:56:89:14:18 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 20.03 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:22 EST
+Nmap scan report for 10.11.1.238
+Host is up (0.043s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 6.0p1 Debian 4 (protocol 2.0)
+80/tcp  open  http     Apache httpd 2.2.22 ((Debian))
+111/tcp open  rpcbind  2-4 (RPC #100000)
+443/tcp open  ssl/http Apache httpd 2.2.22 ((Debian))
+MAC Address: 00:50:56:89:29:D4 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 18.44 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:22 EST
+Nmap scan report for 10.11.1.247
+Host is up (0.036s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+MAC Address: 00:50:56:89:53:39 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.08 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:23 EST
+Nmap scan report for 10.11.1.251
+Host is up (0.060s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.1p1 Debian 5ubuntu1 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.2.11 ((Ubuntu) PHP/5.2.6-3ubuntu4.4 with Suhosin-Patch)
+MAC Address: 00:50:56:89:31:75 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.83 seconds
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-07 17:23 EST
+Nmap scan report for 10.11.1.252
+Host is up (0.054s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE    VERSION
+8000/tcp open  http       Apache httpd 2.2.3 ((CentOS))
+8888/tcp open  http-proxy Squid http proxy 3.3.8
+MAC Address: 00:50:56:89:3D:BD (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.91 seconds

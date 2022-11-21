@@ -1,0 +1,758 @@
+Starting Nmap 7.60 ( https://nmap.org ) at 2019-02-13 18:52 UTC
+
+Nmap scan report for 10.10.10.10
+Host is up (0.0021s latency).
+Not shown: 984 closed ports
+PORT      STATE SERVICE      VERSION
+25/tcp    open  smtp         Microsoft ESMTP 8.5.9600.16384
+42/tcp    open  tcpwrapped
+80/tcp    open  http         Microsoft IIS httpd 8.5
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49156/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  msrpc        Microsoft Windows RPC
+49158/tcp open  msrpc        Microsoft Windows RPC
+49159/tcp open  msrpc        Microsoft Windows RPC
+49160/tcp open  msrpc        Microsoft Windows RPC
+49161/tcp open  msrpc        Microsoft Windows RPC
+Device type: general purpose
+Running: Microsoft Windows 2012|7|8.1
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_7:::ultimate cpe:/o:microsoft:windows_8.1
+OS details: Microsoft Windows Server 2012 R2 Update 1, Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1
+Network Distance: 6 hops
+Service Info: Host: trinity; OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.10.10.20
+Host is up (0.0020s latency).
+Not shown: 989 closed ports
+PORT      STATE    SERVICE      VERSION
+80/tcp    open     http         Microsoft IIS httpd 8.5
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+49152/tcp open     msrpc        Microsoft Windows RPC
+49153/tcp open     msrpc        Microsoft Windows RPC
+49154/tcp open     msrpc        Microsoft Windows RPC
+49155/tcp open     msrpc        Microsoft Windows RPC
+49156/tcp open     msrpc        Microsoft Windows RPC
+49157/tcp open     msrpc        Microsoft Windows RPC
+49158/tcp open     msrpc        Microsoft Windows RPC
+Device type: general purpose
+Running: Microsoft Windows 2012|7|8.1
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_7:::ultimate cpe:/o:microsoft:windows_8.1
+OS details: Microsoft Windows Server 2012 R2 Update 1, Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1
+Network Distance: 6 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.10.10.50
+Host is up (0.0024s latency).
+Not shown: 991 closed ports
+PORT    STATE SERVICE   VERSION
+21/tcp  open  ftp       vsftpd 3.0.2
+22/tcp  open  ssh       OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+23/tcp  open  telnet    Linux telnetd
+80/tcp  open  http      Apache httpd 2.4.7 ((Ubuntu))
+111/tcp open  rpcbind   2-4 (RPC #100000)
+443/tcp open  ssl/https Apache/2.4.7 (Ubuntu)
+512/tcp open  exec      netkit-rsh rexecd
+513/tcp open  login?
+514/tcp open  shell?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port514-TCP:V=7.60%I=7%D=2/13%Time=5C646846%P=x86_64-unknown-linux-gnu%
+SF:r(NULL,33,"sbrshd:\x20Can't\x20bind\x20socket\x20\(Address\x20already\x
+SF:20in\x20use\)\n");
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 6 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.60
+Host is up (0.0021s latency).
+Not shown: 991 closed ports
+PORT    STATE SERVICE   VERSION
+21/tcp  open  ftp       vsftpd 3.0.2
+22/tcp  open  ssh       (protocol 1.99)
+23/tcp  open  telnet    Linux telnetd
+53/tcp  open  domain
+80/tcp  open  http      Apache httpd 2.4.7 ((Ubuntu))
+111/tcp open  rpcbind   2-4 (RPC #100000)
+443/tcp open  ssl/https Apache/2.4.7 (Ubuntu)
+513/tcp open  login?
+514/tcp open  shell?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.60%I=7%D=2/13%Time=5C64684C%P=x86_64-unknown-linux-gnu%r
+SF:(NULL,29,"SSH-1\.99-OpenSSH_6\.6\.1p1\x20Ubuntu-2ubuntu2\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port514-TCP:V=7.60%I=7%D=2/13%Time=5C646853%P=x86_64-unknown-linux-gnu%
+SF:r(NULL,33,"sbrshd:\x20Can't\x20bind\x20socket\x20\(Address\x20already\x
+SF:20in\x20use\)\n");
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 6 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.4
+Host is up (0.00097s latency).
+Not shown: 999 filtered ports
+PORT    STATE SERVICE VERSION
+135/tcp open  msrpc   Microsoft Windows RPC
+MAC Address: F8:B1:56:C0:3B:4B (Dell)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|general purpose
+Running (JUST GUESSING): AVtech embedded (87%), Microsoft Windows XP (87%), FreeBSD 6.X|10.X (86%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp2 cpe:/o:freebsd:freebsd:6.2 cpe:/o:freebsd:freebsd:10.3
+Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (87%), Microsoft Windows XP SP2 (87%), FreeBSD 6.2-RELEASE (86%), FreeBSD 10.3-STABLE (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.150
+Host is up (0.00065s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE         VERSION
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+2968/tcp open  enpp?
+9090/tcp open  tcpwrapped
+MAC Address: 00:50:B6:28:98:38 (Good WAY IND.)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized
+Running (JUST GUESSING): AVtech embedded (87%)
+Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.153
+Host is up (0.011s latency).
+Not shown: 948 filtered ports, 49 closed ports
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+6646/tcp open  tcpwrapped
+MAC Address: 54:BF:64:1A:6C:4E (Unknown)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.154
+Host is up (0.00086s latency).
+All 1000 scanned ports on 10.25.5.154 are closed
+MAC Address: 78:7B:8A:CD:09:73 (Apple)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.156
+Host is up (-0.045s latency).
+Not shown: 994 filtered ports
+PORT     STATE  SERVICE       VERSION
+25/tcp   closed smtp
+80/tcp   closed http
+443/tcp  closed https
+554/tcp  closed rtsp
+1720/tcp closed h323q931
+3389/tcp closed ms-wbt-server
+MAC Address: 78:7B:8A:D3:A9:B4 (Apple)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.157
+Host is up (0.00093s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE         VERSION
+135/tcp open  msrpc           Microsoft Windows RPC
+139/tcp open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+902/tcp open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+MAC Address: 18:DB:F2:58:53:00 (Dell)
+Aggressive OS guesses: Microsoft Windows Longhorn (95%), Microsoft Windows Vista SP1 (93%), Microsoft Windows 10 build 10586 (92%), Microsoft Windows 7 Enterprise SP1 (92%), Microsoft Windows 7 SP1 (92%), Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows Server 2008 SP2 (91%), Microsoft Windows 8 (91%), Microsoft Windows 10 build 10074 - 14393 (91%), Microsoft Windows Server 2008 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.161
+Host is up (0.00087s latency).
+Not shown: 995 closed ports
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 7.9 (protocol 2.0)
+88/tcp    open  kerberos-sec  Heimdal Kerberos (server time: 2019-02-13 20:58:16Z)
+445/tcp   open  microsoft-ds?
+548/tcp   open  afp
+49157/tcp open  unknown
+MAC Address: 38:C9:86:43:30:7E (Apple)
+Aggressive OS guesses: Apple TV 5.2.1 or 5.3 (93%), Apple OS X 10.11 (El Capitan) (Darwin 15.4.0) (91%), Apple Mac OS X 10.4.8 - 10.4.11 (Tiger) (Darwin 8.8.0 - 8.11.0) (90%), Apple iOS 5.0.1 (90%), Apple Mac OS X 10.7.0 (Lion) - 10.12 (Sierra) or iOS 4.1 - 9.3.3 (Darwin 10.0.0 - 16.1.0) (90%), Apple Mac OS X 10.7.4 - 10.7.5 (Lion) (Darwin 11.4.2) (90%), Apple Mac OS X 10.7.0 - 10.7.5 (Lion) or iOS 4.2 - 5.0.1 (Darwin 10.4.0 - 11.4.2) (90%), Apple Mac OS X 10.7.0 - 10.7.5 (Lion) (Darwin 11.0.0 - 11.4.2) (89%), Apple iOS 5.0.1 - 5.1.1 (89%), Apple iOS 6.0.1 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.162
+Host is up (0.0011s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE      VERSION
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+MAC Address: A0:CE:C8:09:A9:C5 (CE Link Limited)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows XP (85%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp2
+Aggressive OS guesses: Microsoft Windows XP SP2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: Host: DESKTOP-DB9HIMO; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.165
+Host is up (0.0012s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE VERSION
+5357/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 10:65:30:F1:49:22 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: FreeBSD 6.2-RELEASE (94%), Microsoft Windows 10 build 10586 - 14393 (93%), Microsoft Windows 8.1 R1 (92%), Microsoft Windows Phone 7.5 or 8.0 (92%), Microsoft Windows 10 build 10586 (92%), Microsoft Windows Server 2008 or 2008 Beta 3 (92%), Microsoft Windows Server 2008 R2 or Windows 8.1 (92%), Microsoft Windows 7 Professional or Windows 8 (92%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (92%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.175
+Host is up (0.0011s latency).
+All 1000 scanned ports on 10.25.5.175 are closed
+MAC Address: E4:95:6E:40:D3:A4 (Ieee Registration Authority)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.177
+Host is up (-0.11s latency).
+All 1000 scanned ports on 10.25.5.177 are filtered
+MAC Address: 8C:3B:AD:3C:3D:CC (Netgear)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.178
+Host is up (0.0015s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+902/tcp  open  tcpwrapped
+912/tcp  open  tcpwrapped
+6646/tcp open  tcpwrapped
+MAC Address: F0:1F:AF:33:01:3D (Dell)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.179
+Host is up (-0.083s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE    VERSION
+6646/tcp open  tcpwrapped
+MAC Address: A0:CE:C8:01:A4:31 (CE Link Limited)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Novell NetWare 6.X
+OS CPE: cpe:/o:novell:netware:6
+OS details: Novell NetWare 6
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.180
+Host is up (0.0012s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE         VERSION
+135/tcp open  msrpc           Microsoft Windows RPC
+139/tcp open  netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp open  ssl/https       VMware Workstation SOAP API 15.0.2
+445/tcp open  microsoft-ds?
+902/tcp open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+MAC Address: E4:B9:7A:31:70:EF (Unknown)
+Aggressive OS guesses: Microsoft Windows Longhorn (95%), Microsoft Windows 10 build 10586 (93%), Microsoft Windows Server 2008 SP2 (93%), Microsoft Windows 7 SP1 (93%), Microsoft Windows 8.1 Update 1 (93%), Microsoft Windows 8 (93%), Microsoft Windows 7 Enterprise SP1 (92%), Microsoft Windows Vista SP1 (92%), Microsoft Windows 10 build 10074 - 14393 (91%), Microsoft Windows Server 2008 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:vmware:Workstation:15.0.2
+
+Nmap scan report for 10.25.5.181
+Host is up (-0.11s latency).
+All 1000 scanned ports on 10.25.5.181 are filtered
+MAC Address: 00:01:97:45:78:96 (Cisco Systems)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.182
+Host is up (0.0021s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http       nginx 1.10.3 (Ubuntu)
+8443/tcp open  tcpwrapped
+MAC Address: 00:0C:29:05:AE:E3 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.183
+Host is up (0.0017s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+MAC Address: 00:0C:29:99:68:43 (VMware)
+Aggressive OS guesses: Microsoft Windows Longhorn (95%), Microsoft Windows 7 SP1 (93%), Microsoft Windows Vista SP1 (93%), Microsoft Windows 10 build 10586 (92%), Microsoft Windows Server 2008 SP2 (92%), Microsoft Windows 7 Enterprise SP1 (92%), Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows 8 (92%), Microsoft Windows 10 build 10074 - 14393 (91%), Microsoft Windows Server 2008 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.184
+Host is up (0.0017s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE       VERSION
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+6646/tcp open  tcpwrapped
+MAC Address: 3C:18:A0:44:06:E5 (Luxshare Precision Industry Company Limited)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|load balancer|specialized
+Running (JUST GUESSING): Microsoft Windows 2008|7 (89%), Cisco embedded (88%), AVtech embedded (87%)
+OS CPE: cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+Aggressive OS guesses: Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (89%), Cisco ACE load balancer (88%), Microsoft Windows 7 (87%), AVtech Room Alert 26W environmental monitor (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.185
+Host is up (0.0016s latency).
+Not shown: 987 closed ports
+PORT      STATE    SERVICE       VERSION
+22/tcp    open     ssh           OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp    open     http          nginx 1.10.3 (Ubuntu)
+992/tcp   filtered telnets
+1122/tcp  filtered availant-mgr
+1322/tcp  filtered novation
+1352/tcp  filtered lotusnotes
+1524/tcp  filtered ingreslock
+2038/tcp  filtered objectmanager
+3995/tcp  filtered iss-mgmt-ssl
+4444/tcp  filtered krb524
+7938/tcp  filtered lgtomapper
+9943/tcp  filtered unknown
+55600/tcp filtered unknown
+MAC Address: 00:0C:29:7C:CB:AC (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.186
+Host is up (0.00097s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE      VERSION
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+MAC Address: 54:BF:64:10:2D:B7 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2008 (85%)
+OS CPE: cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_server_2008:r2
+Aggressive OS guesses: Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: Host: MARTIN_LAPTOP; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.187
+Host is up (0.00082s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE         VERSION
+135/tcp open  msrpc           Microsoft Windows RPC
+139/tcp open  netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp open  ssl/https
+445/tcp open  microsoft-ds?
+903/tcp open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.60%T=SSL%I=7%D=2/13%Time=5C6484FB%P=x86_64-unknown-linu
+SF:x-gnu%r(GetRequest,A5,"HTTP/1\.1\x20403\x20Forbidden\r\nDate:\x20Wed,\x
+SF:2013\x20Feb\x202019\x2020:58:34\x20GMT\r\nConnection:\x20close\r\nConte
+SF:nt-Type:\x20text/plain;\x20charset=utf-8\r\nX-Frame-Options:\x20DENY\r\
+SF:nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,AB,"HTTP/1\.1\x20501\x20N
+SF:ot\x20Implemented\r\nDate:\x20Wed,\x2013\x20Feb\x202019\x2020:58:34\x20
+SF:GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/plain;\x20charset=
+SF:utf-8\r\nX-Frame-Options:\x20DENY\r\nContent-Length:\x200\r\n\r\n")%r(F
+SF:ourOhFourRequest,A5,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\
+SF:x2013\x20Feb\x202019\x2020:58:34\x20GMT\r\nConnection:\x20close\r\nCont
+SF:ent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Frame-Options:\x20DENY\r
+SF:\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,B3,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nDate:\x20Wed,\x2013\x20Feb\x202019\x2020:58:44\x20GMT
+SF:\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\nContent-Lengt
+SF:h:\x2050\r\n\r\n<HTML><BODY><H1>400\x20Bad\x20Request</H1></BODY></HTML
+SF:>")%r(SIPOptions,B3,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed
+SF:,\x2013\x20Feb\x202019\x2020:59:47\x20GMT\r\nConnection:\x20close\r\nCo
+SF:ntent-Type:\x20text/html\r\nContent-Length:\x2050\r\n\r\n<HTML><BODY><H
+SF:1>400\x20Bad\x20Request</H1></BODY></HTML>");
+MAC Address: 20:47:47:EA:14:27 (Dell)
+Aggressive OS guesses: Microsoft Windows Longhorn (95%), Microsoft Windows 7 SP1 (93%), Microsoft Windows 8.1 Update 1 (93%), Microsoft Windows 8 (93%), Microsoft Windows Vista SP1 (93%), Microsoft Windows 10 build 10586 (92%), Microsoft Windows Server 2008 SP2 (92%), Microsoft Windows 7 Enterprise SP1 (92%), Microsoft Windows 10 build 10074 - 14393 (91%), Microsoft Windows Server 2008 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.188
+Host is up (-0.11s latency).
+All 1000 scanned ports on 10.25.5.188 are filtered
+MAC Address: 98:28:A6:09:8C:91 (Compal Information (kunshan))
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.189
+Host is up (0.0013s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE         VERSION
+443/tcp open  ssl/https       VMware Workstation SOAP API 15.0.2
+902/tcp open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+MAC Address: 0C:9D:92:34:19:2D (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|general purpose
+Running (JUST GUESSING): AVtech embedded (87%), Microsoft Windows XP (87%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp2
+Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (87%), Microsoft Windows XP SP2 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: CPE: cpe:/o:vmware:Workstation:15.0.2
+
+Nmap scan report for 10.25.5.190
+Host is up (0.0016s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:7E:C6:A7 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.191
+Host is up (0.0020s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+8000/tcp open  tcpwrapped
+MAC Address: 00:0C:29:2C:0D:51 (VMware)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.194
+Host is up (0.0011s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:4F:10:C7 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.195
+Host is up (0.0016s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  tcpwrapped
+80/tcp   open  tcpwrapped
+8000/tcp open  tcpwrapped
+MAC Address: 00:0C:29:A7:A9:B8 (VMware)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.196
+Host is up (0.0016s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:6E:AC:22 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.197
+Host is up (0.0011s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http       nginx 1.10.3 (Ubuntu)
+8000/tcp open  tcpwrapped
+MAC Address: 00:0C:29:49:62:14 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.198
+Host is up (0.0013s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:7D:38:62 (VMware)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.201
+Host is up (0.0015s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:59:E4:B6 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.202
+Host is up (0.0027s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  tcpwrapped
+80/tcp   open  tcpwrapped
+8443/tcp open  tcpwrapped
+MAC Address: 00:0C:29:2D:86:34 (VMware)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.205
+Host is up (0.0016s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http       nginx 1.10.3 (Ubuntu)
+8000/tcp open  http       SimpleHTTPServer 0.6 (Python 2.7.12)
+8443/tcp open  tcpwrapped
+MAC Address: 00:0C:29:2C:23:2C (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.206
+Host is up (0.0020s latency).
+Not shown: 825 closed ports, 173 filtered ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:0D:58:F0 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.208
+Host is up (0.12s latency).
+Not shown: 931 filtered ports, 64 closed ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  tcpwrapped
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+3389/tcp open  tcpwrapped
+MAC Address: 00:0C:29:67:4D:64 (VMware)
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.211
+Host is up (0.014s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    nginx 1.10.3 (Ubuntu)
+MAC Address: 00:0C:29:77:5D:BE (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.214
+Host is up (0.0013s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp  open  ssl/https       VMware Workstation SOAP API 15.0.2
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+5357/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: F4:39:09:3A:11:9D (Unknown)
+Aggressive OS guesses: Microsoft Windows Longhorn (94%), Microsoft Windows 7 SP1 (93%), Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows 8 (92%), Microsoft Windows Vista SP1 (92%), Microsoft Windows 10 build 10586 (91%), Microsoft Windows Server 2008 SP2 (91%), Microsoft Windows 7 Enterprise SP1 (91%), Microsoft Windows 10 build 10074 - 14393 (91%), Microsoft Windows Server 2008 SP2 or Windows 10 or Xbox One (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows, cpe:/o:vmware:Workstation:15.0.2
+
+Nmap scan report for 10.25.5.215
+Host is up (0.0015s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 6 (protocol 2.0)
+MAC Address: 00:0C:29:A8:2F:50 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.216
+Host is up (-0.12s latency).
+All 1000 scanned ports on 10.25.5.216 are filtered
+MAC Address: 00:0C:29:65:4F:E2 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.217
+Host is up (0.0024s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE   VERSION
+22/tcp   open  ssh       OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http      nginx 1.10.3 (Ubuntu)
+8000/tcp open  http-alt?
+MAC Address: 00:0C:29:07:D7:C7 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.25.5.218
+Host is up (0.00061s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+5357/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 00:0C:29:42:BD:AC (VMware)
+Device type: general purpose
+Running: Microsoft Windows 10
+OS CPE: cpe:/o:microsoft:windows_10
+OS details: Microsoft Windows 10 build 10074 - 14393
+Network Distance: 1 hop
+Service Info: Host: DESKTOP-80L1AUR; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.219
+Host is up (0.00072s latency).
+All 1000 scanned ports on 10.25.5.219 are filtered
+MAC Address: 00:0C:29:A7:1A:E3 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.220
+Host is up (0.0016s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE      VERSION
+22/tcp    open  ssh          OpenSSH 6.7 (protocol 2.0)
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+5357/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49156/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  msrpc        Microsoft Windows RPC
+MAC Address: 00:0C:29:05:4C:57 (VMware)
+Device type: general purpose
+Running: Microsoft Windows 7
+OS CPE: cpe:/o:microsoft:windows_7::sp1
+OS details: Microsoft Windows 7 SP1
+Network Distance: 1 hop
+Service Info: Host: IEWIN7; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.25.5.254
+Host is up (0.0050s latency).
+All 1000 scanned ports on 10.25.5.254 are closed
+MAC Address: 64:12:25:C9:1F:C5 (Cisco Systems)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.25.5.193
+Host is up (0.0000090s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http     nginx 1.10.3 (Ubuntu)
+8443/tcp open  ssl/http Apache httpd
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.8 - 4.9
+Network Distance: 0 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 510 IP addresses (49 hosts up) scanned in 7758.46 seconds

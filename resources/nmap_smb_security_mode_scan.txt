@@ -1,0 +1,164 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.5 [1 port]
+Completed ARP Ping Scan at 16:14, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 16:14
+Completed Parallel DNS resolution of 1 host. at 16:14, 0.20s elapsed
+Initiating SYN Stealth Scan at 16:14
+Scanning 10.11.1.5 [1 port]
+Discovered open port 139/tcp on 10.11.1.5
+Completed SYN Stealth Scan at 16:14, 0.27s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.5.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.96s elapsed
+Nmap scan report for 10.11.1.5
+Host is up (0.19s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:65:70 (VMware)
+
+Host script results:
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.09 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.8 [1 port]
+Completed ARP Ping Scan at 16:14, 0.32s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 16:14
+Completed Parallel DNS resolution of 1 host. at 16:14, 0.26s elapsed
+Initiating SYN Stealth Scan at 16:14
+Scanning 10.11.1.8 [1 port]
+Discovered open port 139/tcp on 10.11.1.8
+Completed SYN Stealth Scan at 16:14, 0.33s elapsed (1 total ports)
+NSE: Script scanning 10.11.1.8.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 1.93s elapsed
+Nmap scan report for 10.11.1.8
+Host is up (0.10s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:0E:EC (VMware)
+
+Host script results:
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 3.24 seconds
+           Raw packets sent: 3 (100B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.22 [1 port]
+Completed ARP Ping Scan at 16:14, 0.45s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.22 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (0 hosts up) scanned in 0.77 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.24 [1 port]
+Completed ARP Ping Scan at 16:14, 0.46s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.24 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (0 hosts up) scanned in 0.78 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.31 [1 port]
+Completed ARP Ping Scan at 16:14, 0.44s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.31 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (0 hosts up) scanned in 0.79 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.128 [1 port]
+Completed ARP Ping Scan at 16:14, 0.45s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.128 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (0 hosts up) scanned in 0.79 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.136 [1 port]
+Completed ARP Ping Scan at 16:14, 0.44s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.136 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (0 hosts up) scanned in 0.80 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 0 (0B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 16:14 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Initiating ARP Ping Scan at 16:14
+Scanning 10.11.1.145 [1 port]
+Completed ARP Ping Scan at 16:14, 0.45s elapsed (1 total hosts)
+Nmap scan report for 10.11.1.145 [host down]
+NSE: Script Post-scanning.
+Initiating NSE at 16:14
+Completed NSE at 16:14, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (0 hosts up) scanned in 0.78 seconds
+           Raw packets sent: 2 (56B) | Rcvd: 2 (56B)

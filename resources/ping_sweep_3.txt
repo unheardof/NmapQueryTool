@@ -1,0 +1,18 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-25 11:17 EDT
+Nmap scan report for 172.24.20.1
+Host is up (0.0031s latency).
+Nmap scan report for 172.24.20.2
+Host is up (0.0014s latency).
+Nmap scan report for 172.24.20.3
+Host is up (0.0013s latency).
+Nmap scan report for 172.24.20.95
+Host is up (0.0011s latency).
+Nmap scan report for 172.24.20.96
+Host is up (0.00075s latency).
+Nmap scan report for 172.24.20.97
+Host is up (0.00068s latency).
+Nmap scan report for 172.24.20.98
+Host is up (0.0010s latency).
+Nmap scan report for 172.24.20.99
+Host is up (0.00013s latency).
+Nmap done: 256 IP addresses (8 hosts up) scanned in 2.23 seconds

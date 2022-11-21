@@ -1,0 +1,38 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-18 17:40 EDT
+Stats: 0:00:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 2.16% done; ETC: 17:41 (0:00:45 remaining)
+Stats: 0:09:44 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 64.00% done; ETC: 17:56 (0:05:28 remaining)
+Stats: 0:19:24 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 64.94% done; ETC: 18:10 (0:10:28 remaining)
+Warning: 10.11.1.71 giving up on port because retransmission cap hit (10).
+Stats: 0:46:59 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 67.10% done; ETC: 18:50 (0:23:02 remaining)
+Stats: 1:26:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 70.37% done; ETC: 19:43 (0:36:21 remaining)
+Stats: 1:37:41 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 71.30% done; ETC: 19:57 (0:39:19 remaining)
+Stats: 2:16:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 74.50% done; ETC: 20:43 (0:46:39 remaining)
+Stats: 2:39:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 76.21% done; ETC: 21:09 (0:49:39 remaining)
+Stats: 3:30:50 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 80.35% done; ETC: 22:03 (0:51:33 remaining)
+Stats: 4:10:48 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 83.57% done; ETC: 22:41 (0:49:19 remaining)
+Stats: 4:11:27 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 83.62% done; ETC: 22:41 (0:49:16 remaining)
+Stats: 4:11:29 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 83.62% done; ETC: 22:41 (0:49:16 remaining)
+Nmap scan report for alpha.thinc.local (10.11.1.71)
+Host is up, received arp-response (0.042s latency).
+Not shown: 65507 closed ports, 26 filtered ports
+Reason: 65507 resets and 26 no-responses
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 64 OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http?   syn-ack ttl 64
+MAC Address: 00:50:56:93:29:72 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 29669.74 seconds

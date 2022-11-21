@@ -1,0 +1,874 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.5 [1 port]
+Completed ARP Ping Scan at 15:18, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.5 [1 port]
+Discovered open port 139/tcp on 10.11.1.5
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.5
+Host is up (0.051s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:65:70 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.7 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.7 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.47s elapsed (1 total ports)
+Nmap scan report for 10.11.1.7
+Host is up (0.042s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:3C:9D (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.68 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.8 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.8 [1 port]
+Discovered open port 139/tcp on 10.11.1.8
+Completed SYN Stealth Scan at 15:18, 0.07s elapsed (1 total ports)
+Nmap scan report for 10.11.1.8
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:0E:EC (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.33 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.10 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.10 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.47s elapsed (1 total ports)
+Nmap scan report for 10.11.1.10
+Host is up (0.043s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:93:6C:24 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.73 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.13 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.13 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.49s elapsed (1 total ports)
+Nmap scan report for 10.11.1.13
+Host is up (0.044s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:63:E2 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.74 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.14 [1 port]
+Completed ARP Ping Scan at 15:18, 0.16s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.14 [1 port]
+Completed SYN Stealth Scan at 15:18, 1.29s elapsed (1 total ports)
+Nmap scan report for 10.11.1.14
+Host is up (0.12s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:0B:07 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.63 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.22 [1 port]
+Completed ARP Ping Scan at 15:18, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.22 [1 port]
+Discovered open port 139/tcp on 10.11.1.22
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.22
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:35:29 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.24 [1 port]
+Completed ARP Ping Scan at 15:18, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.24 [1 port]
+Discovered open port 139/tcp on 10.11.1.24
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.24
+Host is up (0.038s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:1F:B3 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.36 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.31 [1 port]
+Completed ARP Ping Scan at 15:18, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.01s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.31 [1 port]
+Discovered open port 139/tcp on 10.11.1.31
+Completed SYN Stealth Scan at 15:18, 0.09s elapsed (1 total ports)
+Nmap scan report for 10.11.1.31
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:36:0B (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.33 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.35 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.35 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.35
+Host is up (0.040s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:31:94 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.33 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (100B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.39 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.39 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.39
+Host is up (0.039s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:93:08:67 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (100B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.44 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.44 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.07s elapsed (1 total ports)
+Nmap scan report for 10.11.1.44
+Host is up (0.042s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:7E:56 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.32 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.49 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.49 [1 port]
+Discovered open port 139/tcp on 10.11.1.49
+Completed SYN Stealth Scan at 15:18, 0.11s elapsed (1 total ports)
+Nmap scan report for 10.11.1.49
+Host is up (0.043s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:13:B1 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.35 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.50 [1 port]
+Completed ARP Ping Scan at 15:18, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.50 [1 port]
+Discovered open port 139/tcp on 10.11.1.50
+Completed SYN Stealth Scan at 15:18, 0.11s elapsed (1 total ports)
+Nmap scan report for 10.11.1.50
+Host is up (0.041s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:1A:52 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.38 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.71 [1 port]
+Completed ARP Ping Scan at 15:18, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.05s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.71 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.71
+Host is up (0.047s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:93:29:72 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.39 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.72 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.01s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.72 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.09s elapsed (1 total ports)
+Nmap scan report for 10.11.1.72
+Host is up (0.038s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:0E:98 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.73 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.73 [1 port]
+Discovered open port 139/tcp on 10.11.1.73
+Completed SYN Stealth Scan at 15:18, 0.14s elapsed (1 total ports)
+Nmap scan report for 10.11.1.73
+Host is up (0.043s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:63:A8 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.75 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.75 [1 port]
+Discovered open port 139/tcp on 10.11.1.75
+Completed SYN Stealth Scan at 15:18, 0.12s elapsed (1 total ports)
+Nmap scan report for 10.11.1.75
+Host is up (0.043s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:1F:73 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.115 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.115 [1 port]
+Discovered open port 139/tcp on 10.11.1.115
+Completed SYN Stealth Scan at 15:18, 0.07s elapsed (1 total ports)
+Nmap scan report for 10.11.1.115
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:64:77 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.116 [1 port]
+Completed ARP Ping Scan at 15:18, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.116 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.116
+Host is up (0.057s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:14:91 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.35 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.125 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.125 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.39s elapsed (1 total ports)
+Nmap scan report for 10.11.1.125
+Host is up (0.034s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:28:B3 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.64 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.128 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.128 [1 port]
+Discovered open port 139/tcp on 10.11.1.128
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.128
+Host is up (0.038s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:23:CD (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.35 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.133 [1 port]
+Completed ARP Ping Scan at 15:18, 0.33s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.133 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.11s elapsed (1 total ports)
+Nmap scan report for 10.11.1.133
+Host is up (0.077s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:1B:56 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.62 seconds
+           Raw packets sent: 3 (100B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.136 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.136 [1 port]
+Discovered open port 139/tcp on 10.11.1.136
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.136
+Host is up (0.042s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:1B:7D (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.141 [1 port]
+Completed ARP Ping Scan at 15:18, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.141 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.08s elapsed (1 total ports)
+Nmap scan report for 10.11.1.141
+Host is up (0.041s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:37:5A (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.145 [1 port]
+Completed ARP Ping Scan at 15:18, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.145 [1 port]
+Discovered open port 139/tcp on 10.11.1.145
+Completed SYN Stealth Scan at 15:18, 0.12s elapsed (1 total ports)
+Nmap scan report for 10.11.1.145
+Host is up (0.044s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:58:70 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.35 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.146 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.146 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.07s elapsed (1 total ports)
+Nmap scan report for 10.11.1.146
+Host is up (0.039s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:22:66 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.202 [1 port]
+Completed ARP Ping Scan at 15:18, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.202 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.53s elapsed (1 total ports)
+Nmap scan report for 10.11.1.202
+Host is up (0.049s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:22:DA (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.81 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.209 [1 port]
+Completed ARP Ping Scan at 15:18, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.209 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.09s elapsed (1 total ports)
+Nmap scan report for 10.11.1.209
+Host is up (0.16s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:5A:1B (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.49 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.217 [1 port]
+Completed ARP Ping Scan at 15:18, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.10s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.217 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.07s elapsed (1 total ports)
+Nmap scan report for 10.11.1.217
+Host is up (0.038s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:0D:2F (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.218 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.218 [1 port]
+Discovered open port 139/tcp on 10.11.1.218
+Completed SYN Stealth Scan at 15:18, 0.15s elapsed (1 total ports)
+Nmap scan report for 10.11.1.218
+Host is up (0.046s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:71:79 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.47 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.219 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.219 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.43s elapsed (1 total ports)
+Nmap scan report for 10.11.1.219
+Host is up (0.037s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:31:CB (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.75 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.220 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.220 [1 port]
+Discovered open port 139/tcp on 10.11.1.220
+Completed SYN Stealth Scan at 15:18, 0.13s elapsed (1 total ports)
+Nmap scan report for 10.11.1.220
+Host is up (0.044s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:26:78 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.221 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.221 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.43s elapsed (1 total ports)
+Nmap scan report for 10.11.1.221
+Host is up (0.037s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:93:67:49 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.75 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.223 [1 port]
+Completed ARP Ping Scan at 15:18, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.223 [1 port]
+Discovered open port 139/tcp on 10.11.1.223
+Completed SYN Stealth Scan at 15:18, 0.12s elapsed (1 total ports)
+Nmap scan report for 10.11.1.223
+Host is up (0.044s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:32:12 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.226 [1 port]
+Completed ARP Ping Scan at 15:18, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.226 [1 port]
+Completed SYN Stealth Scan at 15:18, 0.48s elapsed (1 total ports)
+Nmap scan report for 10.11.1.226
+Host is up (0.040s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:13:B5 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.78 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.227 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.227 [1 port]
+Discovered open port 139/tcp on 10.11.1.227
+Completed SYN Stealth Scan at 15:18, 0.11s elapsed (1 total ports)
+Nmap scan report for 10.11.1.227
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:61:C6 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.229 [1 port]
+Completed ARP Ping Scan at 15:18, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.229 [1 port]
+Discovered open port 139/tcp on 10.11.1.229
+Completed SYN Stealth Scan at 15:18, 0.07s elapsed (1 total ports)
+Nmap scan report for 10.11.1.229
+Host is up (0.037s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:93:38:24 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.39 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.230 [1 port]
+Completed ARP Ping Scan at 15:18, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:18
+Completed Parallel DNS resolution of 1 host. at 15:18, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:18
+Scanning 10.11.1.230 [1 port]
+Discovered open port 139/tcp on 10.11.1.230
+Completed SYN Stealth Scan at 15:18, 0.13s elapsed (1 total ports)
+Nmap scan report for 10.11.1.230
+Host is up (0.046s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+MAC Address: 00:50:56:89:76:DF (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.45 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (72B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:18 EST
+Initiating ARP Ping Scan at 15:18
+Scanning 10.11.1.234 [1 port]
+Completed ARP Ping Scan at 15:19, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:19
+Completed Parallel DNS resolution of 1 host. at 15:19, 0.04s elapsed
+Initiating SYN Stealth Scan at 15:19
+Scanning 10.11.1.234 [1 port]
+Completed SYN Stealth Scan at 15:19, 0.09s elapsed (1 total ports)
+Nmap scan report for 10.11.1.234
+Host is up (0.16s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:1A:F5 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.55 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:19 EST
+Initiating ARP Ping Scan at 15:19
+Scanning 10.11.1.237 [1 port]
+Completed ARP Ping Scan at 15:19, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:19
+Completed Parallel DNS resolution of 1 host. at 15:19, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:19
+Scanning 10.11.1.237 [1 port]
+Completed SYN Stealth Scan at 15:19, 0.09s elapsed (1 total ports)
+Nmap scan report for 10.11.1.237
+Host is up (0.041s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:14:18 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.38 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:19 EST
+Initiating ARP Ping Scan at 15:19
+Scanning 10.11.1.238 [1 port]
+Completed ARP Ping Scan at 15:19, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:19
+Completed Parallel DNS resolution of 1 host. at 15:19, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:19
+Scanning 10.11.1.238 [1 port]
+Completed SYN Stealth Scan at 15:19, 0.09s elapsed (1 total ports)
+Nmap scan report for 10.11.1.238
+Host is up (0.055s latency).
+
+PORT    STATE  SERVICE
+139/tcp closed netbios-ssn
+MAC Address: 00:50:56:89:29:D4 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+           Raw packets sent: 2 (72B) | Rcvd: 2 (68B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:19 EST
+Initiating ARP Ping Scan at 15:19
+Scanning 10.11.1.247 [1 port]
+Completed ARP Ping Scan at 15:19, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:19
+Completed Parallel DNS resolution of 1 host. at 15:19, 0.02s elapsed
+Initiating SYN Stealth Scan at 15:19
+Scanning 10.11.1.247 [1 port]
+Completed SYN Stealth Scan at 15:19, 0.40s elapsed (1 total ports)
+Nmap scan report for 10.11.1.247
+Host is up (0.035s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:53:39 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.69 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:19 EST
+Initiating ARP Ping Scan at 15:19
+Scanning 10.11.1.251 [1 port]
+Completed ARP Ping Scan at 15:19, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:19
+Completed Parallel DNS resolution of 1 host. at 15:19, 0.05s elapsed
+Initiating SYN Stealth Scan at 15:19
+Scanning 10.11.1.251 [1 port]
+Completed SYN Stealth Scan at 15:19, 0.43s elapsed (1 total ports)
+Nmap scan report for 10.11.1.251
+Host is up (0.039s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:31:75 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.76 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-06 15:19 EST
+Initiating ARP Ping Scan at 15:19
+Scanning 10.11.1.252 [1 port]
+Completed ARP Ping Scan at 15:19, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:19
+Completed Parallel DNS resolution of 1 host. at 15:19, 0.03s elapsed
+Initiating SYN Stealth Scan at 15:19
+Scanning 10.11.1.252 [1 port]
+Completed SYN Stealth Scan at 15:19, 0.40s elapsed (1 total ports)
+Nmap scan report for 10.11.1.252
+Host is up (0.035s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: 00:50:56:89:3D:BD (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.72 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 1 (28B)
