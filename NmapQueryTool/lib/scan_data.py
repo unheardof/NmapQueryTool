@@ -126,7 +126,7 @@ class ScanData(NmapData):
         scan_data = ScanData()
 
         for line in data_source:
-            if re.match('Nmap scan report for .*', line):
+            if re.match('^Nmap scan report for ([0-9]{1,3}\.){3}[0-9]{1,3}$', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
 
                 # Handles the following two types of line formats:
