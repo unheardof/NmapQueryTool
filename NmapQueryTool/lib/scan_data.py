@@ -7,7 +7,8 @@ from .port_data import PortData
 class ScanData(NmapData):
 
     def __init__(self):
-        self.host_data_by_ip = {} # Mapping of IP addresses to HostData objects
+        # Mapping of IP addresses to HostData objects
+        self.host_data_by_ip = {}
 
     def __getitem__(self, ip):
         self.host_data_by_ip[ip]

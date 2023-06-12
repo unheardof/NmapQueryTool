@@ -12,8 +12,12 @@ class HostData(NmapData):
         self.hostname = hostname
         self.os_list = []
         self.device_types = []
-        self.additional_service_info = {} # Mapping of nmap service info key to list of values
-        self.data_by_port_number = {} # Mapping of port number strings to PortData objects
+
+        # Mapping of nmap service info key to list of values
+        self.additional_service_info = {}
+
+        # Mapping of port number strings to lists of PortData objects
+        self.data_by_port_number = {}
 
     def __str__(self):
         lines = []
@@ -41,7 +45,8 @@ class HostData(NmapData):
         lines.append('')
 
         for port_number in self.data_by_port_number:
-            lines.append(str(self.data_by_port_number[port_number]))
+            for port_data in self.data_by_port_number[port_number]:
+                lines.append(str(port_data))
 
         # These lines are just for formatting
         lines.append(self.DIVIDER)
@@ -61,7 +66,10 @@ class HostData(NmapData):
 
         serialized_port_data = {}
         for port_number in self.data_by_port_number:
-            serialized_port_data[self.value_as_str(port_number)] = self.data_by_port_number[port_number].as_dict()
+            serialized_port_data[self.value_as_str(port_number)] = [
+                port_data.as_dict()
+                for port_data in self.data_by_port_number[port_number]
+            ]
 
         d['port_data'] = serialized_port_data
 
@@ -88,20 +96,19 @@ class HostData(NmapData):
             base_dict[key.upper()] = value_str
 
         # 'IP', 'HOSTNAME', 'OS', 'DEVICE TYPE', 'PORT NUMBER', 'PROTOCOL', 'STATE', 'SERVICE', 'VERSION'
-        for port in self.data_by_port_number:
-            # Create a copy of the base_dict to prevent editing that dictionary directly
-            data_dict = base_dict.copy()
-            port_data = self.data_by_port_number[port]
+        for port_number in self.data_by_port_number:
+            for port_data in self.data_by_port_number[port_number]:
+                # Create a copy of the base_dict to prevent editing that dictionary directly
+                data_dict = base_dict.copy()
+                data_dict['PORT NUMBER'] = self.value_as_str(port_data.port_number)
+                data_dict['PROTOCOL'] = self.value_as_str(port_data.protocol)
+                data_dict['STATE'] = self.value_as_str(port_data.state)
+                data_dict['SERVICE'] = self.value_as_str(port_data.service)
 
-            data_dict['PORT NUMBER'] = self.value_as_str(port_data.port_number)
-            data_dict['PROTOCOL'] = self.value_as_str(port_data.protocol)
-            data_dict['STATE'] = self.value_as_str(port_data.state)
-            data_dict['SERVICE'] = self.value_as_str(port_data.service)
+                # Escape any comma's in the service version
+                data_dict['VERSION'] = self.value_as_str(port_data.version.replace(',', ''))
 
-            # Escape any comma's in the service version
-            data_dict['VERSION'] = self.value_as_str(port_data.version.replace(',', ''))
-
-            records.append(data_dict)
+                records.append(data_dict)
 
         return records
 
@@ -112,17 +119,25 @@ class HostData(NmapData):
         new_host_data.additional_service_info = self.additional_service_info
         new_host_data.data_by_port_number = {}
 
-        for port in self.data_by_port_number:
-            new_host_data.data_by_port_number[port] = self.data_by_port_number[port].clone()
+        for port_number in self.data_by_port_number:
+            new_host_data.data_by_port_number[port_number] = [
+                port_data.clone()
+                for port_data in self.data_by_port_number[port_number]
+            ]
 
         return new_host_data
 
     def add_data(self, port_data):
         if port_data.port_number in self.data_by_port_number:
-            # TODO: Add functionality for merging PortData objects
-            raise Exception("Data already exists for port %s on host %s" % port_data.port_number, self.ip)
+            port_data_entry_exists = False
+            for existing_port_data in self.data_by_port_number[port_data.port_number]:
+                if existing_port_data == port_data:
+                    port_data_entry_exists = True
+
+            if not port_data_entry_exists:
+                self.data_by_port_number[port_data.port_number].append(port_data)
         else:
-            self.data_by_port_number[port_data.port_number] = port_data
+            self.data_by_port_number[port_data.port_number] = [port_data]
 
     def add_os_data(self, os_data):
         if os_data is None:
@@ -156,14 +171,21 @@ class HostData(NmapData):
 
         match_found = False
         new_data_by_port_number = {}
-        for port in self.data_by_port_number:
-            if port in port_numbers:
-                port_data = self.data_by_port_number[port]
+        for port_number in self.data_by_port_number:
+            if port_number not in port_numbers:
+                continue
+            
+            for port_data in self.data_by_port_number[port_number]:
+                if state is not None and port_data.state != state:
+                    # Ignore port state unless one is provided to filter on
+                    continue
+                
+                match_found = True
 
-                # Ignore port state unless one is provided to filter on
-                if state is None or port_data.state == state:
-                    match_found = True
-                    new_data_by_port_number[port] = port_data.clone()
+                if port_number in new_data_by_port_number:
+                    new_data_by_port_number[port_number].append(port_data.clone())
+                else:
+                    new_data_by_port_number[port_number] = [port_data.clone()]
 
         filtered_host_data.data_by_port_number = new_data_by_port_number
 

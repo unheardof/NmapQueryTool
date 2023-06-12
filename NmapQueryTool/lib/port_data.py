@@ -22,6 +22,18 @@ class PortData(NmapData):
 
         return ' '.join(tokens)
 
+    def __eq__(self, other):
+        if type(other) is not PortData:
+            return False
+
+        return (
+            self.port_number == other.port_number
+            and self.protocol == other.protocol
+            and self.state == other.state
+            and self.service == other.service
+            and self.version == other.version
+        )
+
     def as_dict(self):
         d = {}
         d['port_number'] = self.value_as_str(self.port_number)
