@@ -27,7 +27,7 @@ class ScanData(NmapData):
                 header_value = key.upper()
                 if not header_value in headers:
                     headers.append(header_value)
-                
+
         return headers
 
     def to_csv_string(self):
@@ -56,7 +56,7 @@ class ScanData(NmapData):
         return self.host_data_by_ip.keys()
 
     def host_data_list(self):
-        return self.host_data_by_ip.values()        
+        return self.host_data_by_ip.values()
 
     def add_host_data(self, host_ip, host_data):
         # TODO: Add logic for merging HostData objects
@@ -129,8 +129,10 @@ class ScanData(NmapData):
 
         if type(data_source) is str:
             data_source = data_source.split('\n')
-        
+
         for line in data_source:
+            line = line.strip()
+
             if re.match('^Nmap scan report for ([0-9]{1,3}\.){3}[0-9]{1,3}$', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
 
@@ -145,7 +147,7 @@ class ScanData(NmapData):
                     host_ip_pair = host_and_ip_data.replace('(', '').replace(')', '').split(' ')
                     hostname = host_ip_pair[0]
                     host_ip = host_ip_pair[1]
-                    
+
                 if host_ip == None:
                     raise Exception('No host IP found if "%s"') % line
 
@@ -154,11 +156,11 @@ class ScanData(NmapData):
             # TODO: Add support for this header line format:
             #
             # Nmap scan report for www.nakatomi02.com (108.226.158.80)
-                
+
             # Skip all lines until data for a specific host is encountered
             if host_ip is None:
                 continue
-            
+
             if re.match('[0-9]+/[a-zA-Z]+[ ]+.*', line):
                 tokens = line.strip().split(' ')
                 values = [t for t in tokens if t != ''] # Filter out the whitespace tokens
@@ -180,14 +182,14 @@ class ScanData(NmapData):
                 port_data.state = values[1]
                 port_data.service = values[2]
                 port_data.version = ' '.join(values[3:])
-    
+
                 scan_data.host_data_by_ip[host_ip].add_data(port_data)
 
             elif re.match('OS details\: (.*)', line):
                 result = re.match('OS details\: (.*)', line)
                 os_info = result.group(1).replace(' or ', ' ').split(',')
                 scan_data.host_data_by_ip[host_ip].add_os_data(os_info)
-                
+
             elif re.match('Service Info: (.*)', line):
                 result = re.match('Service Info: (.*)', line)
                 service_info_str = result.group(1)
@@ -209,4 +211,3 @@ class ScanData(NmapData):
                 continue
 
         return scan_data
-     
