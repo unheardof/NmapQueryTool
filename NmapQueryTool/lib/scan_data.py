@@ -125,7 +125,11 @@ class ScanData(NmapData):
     @staticmethod
     def create_from_nmap_data(data_source):
         scan_data = ScanData()
+        host_ip = None
 
+        if type(data_source) is str:
+            data_source = data_source.split('\n')
+        
         for line in data_source:
             if re.match('^Nmap scan report for ([0-9]{1,3}\.){3}[0-9]{1,3}$', line):
                 host_and_ip_data = re.match('Nmap scan report for (.*)', line).group(1)
@@ -134,7 +138,6 @@ class ScanData(NmapData):
                 #
                 # Nmap scan report for 10.90.78.103
                 # Nmap scan report for atsva9078153.vbschools.com (10.90.78.153)
-                host_ip = None
                 hostname = None
                 if re.match('([0-9]{1,3}\.){3}[0-9]{1,3}', host_and_ip_data):
                     host_ip = host_and_ip_data
@@ -148,6 +151,14 @@ class ScanData(NmapData):
 
                 scan_data.add_host_data(host_ip, HostData(host_ip, hostname))
 
+            # TODO: Add support for this header line format:
+            #
+            # Nmap scan report for www.nakatomi02.com (108.226.158.80)
+                
+            # Skip all lines until data for a specific host is encountered
+            if host_ip is None:
+                continue
+            
             if re.match('[0-9]+/[a-zA-Z]+[ ]+.*', line):
                 tokens = line.strip().split(' ')
                 values = [t for t in tokens if t != ''] # Filter out the whitespace tokens

@@ -8,7 +8,7 @@
 
 3.) Run the setup script to generate new distribution artifacts:
 
-    python setup.py sdist bdist_wheel
+    python3 setup.py sdist bdist_wheel
 
 4.) Upload to test.pypi.org
 
